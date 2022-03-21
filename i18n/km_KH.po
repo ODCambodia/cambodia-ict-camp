@@ -1,0 +1,663 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: cambodia-ict-camp\n"
+"POT-Creation-Date: 2019-02-07 17:15+0700\n"
+"PO-Revision-Date: 2019-02-07 17:16+0700\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: km_KH\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 2.2.1\n"
+"X-Poedit-Basepath: ..\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: _;_e;__;_x;esc_html__\n"
+"X-Poedit-SearchPath-0: .\n"
+
+#: hooks/footer.php:90
+#, php-format
+msgid "%1$s by %2$s"
+msgstr ""
+
+#: hooks/header.php:226
+msgid "Event Booking"
+msgstr ""
+
+#: hooks/slider-selection.php:197
+msgid "The First Day of Cambodia ICT Camp is opening now."
+msgstr "ថ្ងៃទី ១ នៃកម្មវិធីកម្ពុជាអាយស៊ីធីខែមកំពុងដំណើរការ"
+
+#: hooks/slider-selection.php:202
+msgid "The Second Day of Cambodia ICT Camp is ongoing."
+msgstr "ថ្ងៃទី ២ នៃកម្មវិធីកម្ពុជាអាយស៊ីធីខែមកំពុងដំណើរការ"
+
+#: hooks/slider-selection.php:207
+msgid "The Third Day of Cambodia ICT Camp is ongoing."
+msgstr "ថ្ងៃទី ៣ នៃកម្មវិធីកម្ពុជាអាយស៊ីធីខែមកំពុងដំណើរការ"
+
+#: hooks/slider-selection.php:212
+msgid "The Fourth Day of Cambodia ICT Camp is ongoing."
+msgstr "ថ្ងៃទី ៤ នៃកម្មវិធីកម្ពុជាអាយស៊ីធីខែមកំពុងដំណើរការ"
+
+#: hooks/slider-selection.php:217
+msgid "The last day of Cambodia ICT Camp is ongoing."
+msgstr "ថ្ងៃចុងក្រោយនៃកម្មវិធីកម្ពុជាអាយស៊ីធីខែមកំពុងដំណើរការ"
+
+#: hooks/slider-selection.php:222
+msgid "The Cambodia ICT Camp was ended."
+msgstr "កម្មវិធីកម្ពុជាអាយស៊ីធីខែមបានបញ្ចប់ជាស្ថាពរ"
+
+#: inc/custom-meta-boxes/custom-link.php:7
+msgid "Custom link to"
+msgstr ""
+
+#: inc/custom-meta-boxes/facilitators/expertise.php:7
+#: inc/custom-meta-boxes/speakers/expertise.php:7
+msgid "Expertise"
+msgstr "ជំនាញ"
+
+#: inc/custom-meta-boxes/facilitators/organization.php:7
+#: inc/custom-meta-boxes/speakers/organization.php:7
+msgid "Organization"
+msgstr "ស្ថាប័ន"
+
+#: inc/custom-meta-boxes/facilitators/social-media-links.php:7
+#: inc/custom-meta-boxes/speakers/social-media-links.php:7
+msgid "Social Media Links"
+msgstr ""
+
+#: inc/custom-post-types/announcements.php:7
+#: inc/custom-post-types/announcements.php:9
+msgid "Announcements"
+msgstr "សេចក្តីប្រកាស"
+
+#: inc/custom-post-types/announcements.php:8
+msgid "Announcement"
+msgstr "សេចក្តីប្រកាស"
+
+#: inc/custom-post-types/announcements.php:10
+msgid "Parent Announcement"
+msgstr ""
+
+#: inc/custom-post-types/announcements.php:11
+msgid "All Announcements"
+msgstr ""
+
+#: inc/custom-post-types/announcements.php:12
+msgid "View Announcement"
+msgstr ""
+
+#: inc/custom-post-types/announcements.php:13
+msgid "Add New Announcement"
+msgstr ""
+
+#: inc/custom-post-types/announcements.php:14
+#: inc/custom-post-types/donors.php:14
+#: inc/custom-post-types/facilitators.php:14
+#: inc/custom-post-types/organizers.php:14
+#: inc/custom-post-types/partners.php:14
+#: inc/custom-post-types/presentations.php:14
+#: inc/custom-post-types/sessions.php:14 inc/custom-post-types/speakers.php:14
+msgid "Add New"
+msgstr ""
+
+#: inc/custom-post-types/announcements.php:15
+msgid "Edit Announcement"
+msgstr ""
+
+#: inc/custom-post-types/announcements.php:16
+msgid "Update Announcement"
+msgstr ""
+
+#: inc/custom-post-types/announcements.php:17
+msgid "Search Announcement"
+msgstr ""
+
+#: inc/custom-post-types/announcements.php:18
+#: inc/custom-post-types/donors.php:18
+#: inc/custom-post-types/facilitators.php:18
+#: inc/custom-post-types/organizers.php:18
+#: inc/custom-post-types/partners.php:18
+#: inc/custom-post-types/presentations.php:18
+#: inc/custom-post-types/sessions.php:18 inc/custom-post-types/speakers.php:18
+msgid "Not Found"
+msgstr "ព័ត៌មានពុំអាចរកបាន"
+
+#: inc/custom-post-types/announcements.php:19
+#: inc/custom-post-types/donors.php:19
+#: inc/custom-post-types/facilitators.php:19
+#: inc/custom-post-types/organizers.php:19
+#: inc/custom-post-types/partners.php:19
+#: inc/custom-post-types/presentations.php:19
+#: inc/custom-post-types/sessions.php:19 inc/custom-post-types/speakers.php:19
+msgid "Not found in Trash"
+msgstr ""
+
+#: inc/custom-post-types/announcements.php:23
+#: inc/custom-post-types/announcements.php:24
+msgid "announcements"
+msgstr ""
+
+#: inc/custom-post-types/donors.php:7 inc/custom-post-types/donors.php:9
+msgid "Donors"
+msgstr "ម្ចាស់ជំនួយ"
+
+#: inc/custom-post-types/donors.php:8
+msgid "Donor"
+msgstr "ម្ចាស់ជំនួយ"
+
+#: inc/custom-post-types/donors.php:10
+msgid "Parent Donor"
+msgstr ""
+
+#: inc/custom-post-types/donors.php:11
+msgid "All donors"
+msgstr ""
+
+#: inc/custom-post-types/donors.php:12
+msgid "View Donor"
+msgstr ""
+
+#: inc/custom-post-types/donors.php:13
+msgid "Add New Donor"
+msgstr ""
+
+#: inc/custom-post-types/donors.php:15
+msgid "Edit Donor"
+msgstr ""
+
+#: inc/custom-post-types/donors.php:16
+msgid "Update Donor"
+msgstr ""
+
+#: inc/custom-post-types/donors.php:17
+msgid "Search Donor"
+msgstr "ស្វែងរកម្ចាស់ជំនួយ"
+
+#: inc/custom-post-types/donors.php:23 inc/custom-post-types/donors.php:24
+msgid "donors"
+msgstr "ម្ចាស់ជំនួយ"
+
+#: inc/custom-post-types/facilitators.php:7
+#: inc/custom-post-types/facilitators.php:9
+#: inc/custom-post-types/facilitators.php:23
+#: inc/custom-post-types/facilitators.php:24
+msgid "Facilitators"
+msgstr "អ្នកសម្របសម្រួល"
+
+#: inc/custom-post-types/facilitators.php:8
+msgid "Facilitator"
+msgstr ""
+
+#: inc/custom-post-types/facilitators.php:10
+msgid "Parent Facilitator"
+msgstr ""
+
+#: inc/custom-post-types/facilitators.php:11
+msgid "All Facilitators"
+msgstr ""
+
+#: inc/custom-post-types/facilitators.php:12
+msgid "View Facilitator"
+msgstr ""
+
+#: inc/custom-post-types/facilitators.php:13
+msgid "Add New Facilitator"
+msgstr ""
+
+#: inc/custom-post-types/facilitators.php:15
+msgid "Edit Facilitator"
+msgstr ""
+
+#: inc/custom-post-types/facilitators.php:16
+msgid "Update Facilitator"
+msgstr ""
+
+#: inc/custom-post-types/facilitators.php:17
+#, fuzzy
+#| msgid "Search Donor"
+msgid "Search Facilitator"
+msgstr "ស្វែងរកម្ចាស់ជំនួយ"
+
+#: inc/custom-post-types/organizers.php:7
+#: inc/custom-post-types/organizers.php:9
+#: inc/custom-post-types/organizers.php:23
+#: inc/custom-post-types/organizers.php:24
+msgid "Organizers"
+msgstr "អ្នករៀបចំកម្មវិធី"
+
+#: inc/custom-post-types/organizers.php:8
+msgid "Organizer"
+msgstr "អ្នករៀបចំកម្មវិធី"
+
+#: inc/custom-post-types/organizers.php:10
+msgid "Parent Organizer"
+msgstr ""
+
+#: inc/custom-post-types/organizers.php:11
+msgid "All Organizers"
+msgstr ""
+
+#: inc/custom-post-types/organizers.php:12
+msgid "View Organizer"
+msgstr ""
+
+#: inc/custom-post-types/organizers.php:13
+msgid "Add New Organizer"
+msgstr ""
+
+#: inc/custom-post-types/organizers.php:15
+msgid "Edit Organizer"
+msgstr ""
+
+#: inc/custom-post-types/organizers.php:16
+msgid "Update Organizer"
+msgstr ""
+
+#: inc/custom-post-types/organizers.php:17
+msgid "Search Organizer"
+msgstr "ស្វែងរកអ្នករៀបចំកម្មវិធី"
+
+#: inc/custom-post-types/partners.php:7 inc/custom-post-types/partners.php:9
+#: inc/custom-post-types/partners.php:23 inc/custom-post-types/partners.php:24
+msgid "Parnters"
+msgstr "ដៃគូ"
+
+#: inc/custom-post-types/partners.php:8
+msgid "Partner"
+msgstr "ដៃគូ"
+
+#: inc/custom-post-types/partners.php:10
+msgid "Parent Partner"
+msgstr ""
+
+#: inc/custom-post-types/partners.php:11
+msgid "All Parnters"
+msgstr ""
+
+#: inc/custom-post-types/partners.php:12
+msgid "View Partner"
+msgstr ""
+
+#: inc/custom-post-types/partners.php:13
+msgid "Add New Partner"
+msgstr ""
+
+#: inc/custom-post-types/partners.php:15
+msgid "Edit Partner"
+msgstr ""
+
+#: inc/custom-post-types/partners.php:16
+msgid "Update Partner"
+msgstr ""
+
+#: inc/custom-post-types/partners.php:17
+msgid "Search Partner"
+msgstr ""
+
+#: inc/custom-post-types/presentations.php:7
+#: inc/custom-post-types/presentations.php:9
+#: inc/custom-post-types/presentations.php:23
+#: inc/custom-post-types/presentations.php:24
+msgid "Slide Presentations"
+msgstr "បទបង្ហាញ"
+
+#: inc/custom-post-types/presentations.php:8
+msgid "Slide Presentation"
+msgstr "បទបង្ហាញ"
+
+#: inc/custom-post-types/presentations.php:10
+msgid "Parent Slide Presentation"
+msgstr ""
+
+#: inc/custom-post-types/presentations.php:11
+msgid "All Slide Presentations"
+msgstr ""
+
+#: inc/custom-post-types/presentations.php:12
+msgid "View Slide Presentation"
+msgstr ""
+
+#: inc/custom-post-types/presentations.php:13
+msgid "Add New Slide Presentation"
+msgstr ""
+
+#: inc/custom-post-types/presentations.php:15
+msgid "Edit Slide Presentation"
+msgstr ""
+
+#: inc/custom-post-types/presentations.php:16
+msgid "Update Slide Presentation"
+msgstr ""
+
+#: inc/custom-post-types/presentations.php:17
+#, fuzzy
+#| msgid "Search Donor"
+msgid "Search Slide Presentation"
+msgstr "ស្វែងរកម្ចាស់ជំនួយ"
+
+#: inc/custom-post-types/sessions.php:7 inc/custom-post-types/sessions.php:9
+msgid "Sessions"
+msgstr ""
+
+#: inc/custom-post-types/sessions.php:8
+msgid "Session"
+msgstr ""
+
+#: inc/custom-post-types/sessions.php:10
+msgid "Parent Session"
+msgstr ""
+
+#: inc/custom-post-types/sessions.php:11
+msgid "All Sessions"
+msgstr ""
+
+#: inc/custom-post-types/sessions.php:12
+msgid "View Session"
+msgstr ""
+
+#: inc/custom-post-types/sessions.php:13
+msgid "Add New Session"
+msgstr ""
+
+#: inc/custom-post-types/sessions.php:15
+msgid "Edit Session"
+msgstr ""
+
+#: inc/custom-post-types/sessions.php:16
+msgid "Update Session"
+msgstr ""
+
+#: inc/custom-post-types/sessions.php:17
+msgid "Search Session"
+msgstr ""
+
+#: inc/custom-post-types/sessions.php:23
+msgid "sessions"
+msgstr ""
+
+#: inc/custom-post-types/sessions.php:24
+msgid "Agenda Sessions"
+msgstr ""
+
+#: inc/custom-post-types/speakers.php:7 inc/custom-post-types/speakers.php:9
+#: inc/custom-post-types/speakers.php:23 inc/custom-post-types/speakers.php:24
+msgid "Speakers"
+msgstr "វាគ្មិន"
+
+#: inc/custom-post-types/speakers.php:8
+msgid "Speaker"
+msgstr "វាគ្មិន"
+
+#: inc/custom-post-types/speakers.php:10
+#, fuzzy
+#| msgid "Speaker"
+msgid "Parent Speaker"
+msgstr "វាគ្មិន"
+
+#: inc/custom-post-types/speakers.php:11
+msgid "All Speakers"
+msgstr "វាគ្មិនទាំងអស់"
+
+#: inc/custom-post-types/speakers.php:12
+#, fuzzy
+#| msgid "Speaker"
+msgid "View Speaker"
+msgstr "វាគ្មិន"
+
+#: inc/custom-post-types/speakers.php:13
+#, fuzzy
+#| msgid "All Speakers"
+msgid "Add New Speaker"
+msgstr "វាគ្មិនទាំងអស់"
+
+#: inc/custom-post-types/speakers.php:15
+#, fuzzy
+#| msgid "Speaker"
+msgid "Edit Speaker"
+msgstr "វាគ្មិន"
+
+#: inc/custom-post-types/speakers.php:16
+#, fuzzy
+#| msgid "Speaker"
+msgid "Update Speaker"
+msgstr "វាគ្មិន"
+
+#: inc/custom-post-types/speakers.php:17
+#, fuzzy
+#| msgid "Search Organizer"
+msgid "Search Speaker"
+msgstr "ស្វែងរកអ្នករៀបចំកម្មវិធី"
+
+#: inc/custom-taxonomies/facilitator-groups.php:7
+#: inc/custom-taxonomies/facilitator-groups.php:17
+msgid "Groups"
+msgstr ""
+
+#: inc/custom-taxonomies/facilitator-groups.php:8
+msgid "Group"
+msgstr ""
+
+#: inc/custom-taxonomies/facilitator-groups.php:9
+#, fuzzy
+#| msgid "Search Donor"
+msgid "Search Group"
+msgstr "ស្វែងរកម្ចាស់ជំនួយ"
+
+#: inc/custom-taxonomies/facilitator-groups.php:10
+msgid "All Group"
+msgstr ""
+
+#: inc/custom-taxonomies/facilitator-groups.php:11
+msgid "Parent Group"
+msgstr ""
+
+#: inc/custom-taxonomies/facilitator-groups.php:12
+msgid "Parent Group:"
+msgstr ""
+
+#: inc/custom-taxonomies/facilitator-groups.php:13
+msgid "Edit Group"
+msgstr ""
+
+#: inc/custom-taxonomies/facilitator-groups.php:14
+msgid "Update Group"
+msgstr ""
+
+#: inc/custom-taxonomies/facilitator-groups.php:15
+msgid "Add New Group"
+msgstr ""
+
+#: inc/custom-taxonomies/facilitator-groups.php:16
+msgid "New Group Name"
+msgstr ""
+
+#: inc/custom-taxonomies/session-types.php:7
+#: inc/custom-taxonomies/session-types.php:17
+msgid "Types"
+msgstr ""
+
+#: inc/custom-taxonomies/session-types.php:8
+msgid "Type"
+msgstr ""
+
+#: inc/custom-taxonomies/session-types.php:9
+msgid "Search Type"
+msgstr ""
+
+#: inc/custom-taxonomies/session-types.php:10
+msgid "All Type"
+msgstr ""
+
+#: inc/custom-taxonomies/session-types.php:11
+msgid "Parent Type"
+msgstr ""
+
+#: inc/custom-taxonomies/session-types.php:12
+msgid "Parent Type:"
+msgstr ""
+
+#: inc/custom-taxonomies/session-types.php:13
+msgid "Edit Type"
+msgstr ""
+
+#: inc/custom-taxonomies/session-types.php:14
+msgid "Update Type"
+msgstr ""
+
+#: inc/custom-taxonomies/session-types.php:15
+msgid "Add New Type"
+msgstr ""
+
+#: inc/custom-taxonomies/session-types.php:16
+msgid "New Type Name"
+msgstr ""
+
+#: inc/custom-taxonomies/years.php:7
+msgid "Years of Camp"
+msgstr ""
+
+#: inc/custom-taxonomies/years.php:8 inc/custom-taxonomies/years.php:17
+msgid "Year of Camp"
+msgstr ""
+
+#: inc/custom-taxonomies/years.php:9
+msgid "Search Years of Camp"
+msgstr ""
+
+#: inc/custom-taxonomies/years.php:10
+msgid "All Years of Camp"
+msgstr ""
+
+#: inc/custom-taxonomies/years.php:11
+msgid "Parent Year of Camp"
+msgstr ""
+
+#: inc/custom-taxonomies/years.php:12
+msgid "Parent Year of Camp:"
+msgstr ""
+
+#: inc/custom-taxonomies/years.php:13
+msgid "Edit Year of Camp"
+msgstr ""
+
+#: inc/custom-taxonomies/years.php:14
+msgid "Update Year of Camp"
+msgstr ""
+
+#: inc/custom-taxonomies/years.php:15
+msgid "Add New Year of Camp"
+msgstr ""
+
+#: inc/custom-taxonomies/years.php:16
+msgid "New Year of Camp Name"
+msgstr ""
+
+#: inc/taxonomy-form-fields/categories/colors.php:13
+#: inc/taxonomy-form-fields/categories/colors.php:31
+msgid "Theme Color"
+msgstr ""
+
+#: inc/taxonomy-form-fields/categories/colors.php:17
+#: inc/taxonomy-form-fields/categories/colors.php:35
+#: inc/taxonomy-form-fields/categories/images.php:37
+msgid "Select a color for the theme."
+msgstr ""
+
+#: inc/taxonomy-form-fields/categories/images.php:13
+#: inc/taxonomy-form-fields/categories/images.php:31
+msgid "Theme Image"
+msgstr ""
+
+#: inc/taxonomy-form-fields/categories/images.php:17
+msgid "Select a image for the theme."
+msgstr ""
+
+#: inc/template-parts/content-list-posts.php:56
+#: inc/template-parts/content-single-post.php:35
+#: inc/template-parts/content.php:56
+#, php-format
+msgid "Continue reading %s <span class=\"meta-nav\">&rarr;</span>"
+msgstr ""
+
+#: inc/template-parts/content-list-posts.php:60
+#: inc/template-parts/content-page.php:17
+#: inc/template-parts/content-single-post.php:39
+#: inc/template-parts/content.php:60
+msgid "Pages:"
+msgstr ""
+
+#: inc/template-parts/content-page.php:28
+#, php-format
+msgid "Edit %s"
+msgstr ""
+
+#: inc/utils-content.php:117
+msgid "Leave a comment"
+msgstr "បញ្ចេញមតិ"
+
+#: inc/utils-content.php:117
+msgid "1 Comment"
+msgstr ""
+
+#: inc/utils-content.php:117
+msgid "% Comments"
+msgstr ""
+
+#: inc/utils-content.php:147
+#, php-format
+msgid "Error locating %s for inclusion"
+msgstr ""
+
+#: index.php:10
+msgid "Blog"
+msgstr "ប្លក់"
+
+#: widgets/camp-organizers.php:15
+msgid "CICT Organizer Widget"
+msgstr "អ្នករៀបចំកម្មវិធី"
+
+#: widgets/camp-organizers.php:17
+msgid "Display a list of all organizers of the camp"
+msgstr ""
+
+#: widgets/camp-organizers.php:84 widgets/camp-themes.php:80
+msgid "New Title"
+msgstr ""
+
+#: widgets/camp-organizers.php:89 widgets/camp-themes.php:85
+msgid "Title: "
+msgstr ""
+
+#: widgets/camp-posts-no-img.php:42
+msgid "CICT Posts Column"
+msgstr ""
+
+#: widgets/camp-posts-no-img.php:45
+msgid "Show posts from selected category with advanced options"
+msgstr ""
+
+#: widgets/camp-themes.php:15
+msgid "CICT Theme Widget"
+msgstr ""
+
+#: widgets/camp-themes.php:17
+msgid "Display a list of all themes of the camp"
+msgstr ""
+
+#~ msgid "Partners"
+#~ msgstr "ដៃគូ"
+
+#~ msgid "Advisory Committee"
+#~ msgstr "គណៈកម្មការប្រឹក្សាយោបល់"
+
+#~ msgid "Volunteers"
+#~ msgstr "អ្នកស្ម័គ្រចិត្ត"
+
+#~ msgid "Years"
+#~ msgstr "ឆ្នាំ"
+
+#~ msgid "Year"
+#~ msgstr "ឆ្នាំ"

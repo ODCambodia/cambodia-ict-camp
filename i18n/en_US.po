@@ -1,0 +1,413 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: cambodia-ict-camp\n"
+"POT-Creation-Date: 2018-10-10 15:30+0700\n"
+"PO-Revision-Date: 2018-10-10 15:31+0700\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: en_US\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 2.2\n"
+"X-Poedit-Basepath: ..\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: _;_e;__;_x\n"
+"X-Poedit-SearchPath-0: .\n"
+
+#: archive-speakers.php:10 inc/custom-post-types/speakers.php:7
+#: inc/custom-post-types/speakers.php:9 inc/custom-post-types/speakers.php:23
+#: inc/custom-post-types/speakers.php:24
+msgid "Speakers"
+msgstr ""
+
+#: inc/custom-meta-boxes/speakers/expertise.php:7
+msgid "Expertise"
+msgstr ""
+
+#: inc/custom-meta-boxes/speakers/organization.php:7
+msgid "Organization"
+msgstr ""
+
+#: inc/custom-meta-boxes/speakers/social-media-links.php:7
+msgid "Social Media Links"
+msgstr ""
+
+#: inc/custom-post-types/announcements.php:7
+#: inc/custom-post-types/announcements.php:9
+msgid "Announcements"
+msgstr ""
+
+#: inc/custom-post-types/announcements.php:8
+msgid "Announcement"
+msgstr ""
+
+#: inc/custom-post-types/announcements.php:10
+msgid "Parent Announcement"
+msgstr ""
+
+#: inc/custom-post-types/announcements.php:11
+msgid "All Announcements"
+msgstr ""
+
+#: inc/custom-post-types/announcements.php:12
+msgid "View Announcement"
+msgstr ""
+
+#: inc/custom-post-types/announcements.php:13
+msgid "Add New Announcement"
+msgstr ""
+
+#: inc/custom-post-types/announcements.php:14
+#: inc/custom-post-types/donors.php:14 inc/custom-post-types/organizers.php:14
+#: inc/custom-post-types/partners.php:14 inc/custom-post-types/sessions.php:14
+#: inc/custom-post-types/speakers.php:14
+msgid "Add New"
+msgstr ""
+
+#: inc/custom-post-types/announcements.php:15
+msgid "Edit Announcement"
+msgstr ""
+
+#: inc/custom-post-types/announcements.php:16
+msgid "Update Announcement"
+msgstr ""
+
+#: inc/custom-post-types/announcements.php:17
+msgid "Search Announcement"
+msgstr ""
+
+#: inc/custom-post-types/announcements.php:18
+#: inc/custom-post-types/donors.php:18 inc/custom-post-types/organizers.php:18
+#: inc/custom-post-types/partners.php:18 inc/custom-post-types/sessions.php:18
+#: inc/custom-post-types/speakers.php:18
+msgid "Not Found"
+msgstr ""
+
+#: inc/custom-post-types/announcements.php:19
+#: inc/custom-post-types/donors.php:19 inc/custom-post-types/organizers.php:19
+#: inc/custom-post-types/partners.php:19 inc/custom-post-types/sessions.php:19
+#: inc/custom-post-types/speakers.php:19
+msgid "Not found in Trash"
+msgstr ""
+
+#: inc/custom-post-types/announcements.php:23
+#: inc/custom-post-types/announcements.php:24
+msgid "announcements"
+msgstr ""
+
+#: inc/custom-post-types/donors.php:7 inc/custom-post-types/donors.php:9
+msgid "Donors"
+msgstr ""
+
+#: inc/custom-post-types/donors.php:8
+msgid "Donor"
+msgstr ""
+
+#: inc/custom-post-types/donors.php:10
+msgid "Parent Donor"
+msgstr ""
+
+#: inc/custom-post-types/donors.php:11
+msgid "All donors"
+msgstr ""
+
+#: inc/custom-post-types/donors.php:12
+msgid "View Donor"
+msgstr ""
+
+#: inc/custom-post-types/donors.php:13
+msgid "Add New Donor"
+msgstr ""
+
+#: inc/custom-post-types/donors.php:15
+msgid "Edit Donor"
+msgstr ""
+
+#: inc/custom-post-types/donors.php:16
+msgid "Update Donor"
+msgstr ""
+
+#: inc/custom-post-types/donors.php:17
+msgid "Search Donor"
+msgstr ""
+
+#: inc/custom-post-types/donors.php:23 inc/custom-post-types/donors.php:24
+msgid "donors"
+msgstr ""
+
+#: inc/custom-post-types/organizers.php:7
+#: inc/custom-post-types/organizers.php:9
+#: inc/custom-post-types/organizers.php:23
+#: inc/custom-post-types/organizers.php:24
+msgid "Organizers"
+msgstr ""
+
+#: inc/custom-post-types/organizers.php:8
+msgid "Organizer"
+msgstr ""
+
+#: inc/custom-post-types/organizers.php:10
+msgid "Parent Organizer"
+msgstr ""
+
+#: inc/custom-post-types/organizers.php:11
+msgid "All Organizers"
+msgstr ""
+
+#: inc/custom-post-types/organizers.php:12
+msgid "View Organizer"
+msgstr ""
+
+#: inc/custom-post-types/organizers.php:13
+msgid "Add New Organizer"
+msgstr ""
+
+#: inc/custom-post-types/organizers.php:15
+msgid "Edit Organizer"
+msgstr ""
+
+#: inc/custom-post-types/organizers.php:16
+msgid "Update Organizer"
+msgstr ""
+
+#: inc/custom-post-types/organizers.php:17
+msgid "Search Organizer"
+msgstr ""
+
+#: inc/custom-post-types/partners.php:7 inc/custom-post-types/partners.php:9
+#: inc/custom-post-types/partners.php:23 inc/custom-post-types/partners.php:24
+msgid "Parnters"
+msgstr ""
+
+#: inc/custom-post-types/partners.php:8
+msgid "Partner"
+msgstr ""
+
+#: inc/custom-post-types/partners.php:10
+msgid "Parent Partner"
+msgstr ""
+
+#: inc/custom-post-types/partners.php:11
+msgid "All Parnters"
+msgstr ""
+
+#: inc/custom-post-types/partners.php:12
+msgid "View Partner"
+msgstr ""
+
+#: inc/custom-post-types/partners.php:13
+msgid "Add New Partner"
+msgstr ""
+
+#: inc/custom-post-types/partners.php:15
+msgid "Edit Partner"
+msgstr ""
+
+#: inc/custom-post-types/partners.php:16
+msgid "Update Partner"
+msgstr ""
+
+#: inc/custom-post-types/partners.php:17
+msgid "Search Partner"
+msgstr ""
+
+#: inc/custom-post-types/sessions.php:7 inc/custom-post-types/sessions.php:9
+msgid "Sessions"
+msgstr ""
+
+#: inc/custom-post-types/sessions.php:8
+msgid "Session"
+msgstr ""
+
+#: inc/custom-post-types/sessions.php:10
+msgid "Parent Session"
+msgstr ""
+
+#: inc/custom-post-types/sessions.php:11
+msgid "All Sessions"
+msgstr ""
+
+#: inc/custom-post-types/sessions.php:12
+msgid "View Session"
+msgstr ""
+
+#: inc/custom-post-types/sessions.php:13
+msgid "Add New Session"
+msgstr ""
+
+#: inc/custom-post-types/sessions.php:15
+msgid "Edit Session"
+msgstr ""
+
+#: inc/custom-post-types/sessions.php:16
+msgid "Update Session"
+msgstr ""
+
+#: inc/custom-post-types/sessions.php:17
+msgid "Search Session"
+msgstr ""
+
+#: inc/custom-post-types/sessions.php:23
+msgid "sessions"
+msgstr ""
+
+#: inc/custom-post-types/sessions.php:24
+msgid "Agenda Sessions"
+msgstr ""
+
+#: inc/custom-post-types/speakers.php:8
+msgid "Speaker"
+msgstr ""
+
+#: inc/custom-post-types/speakers.php:10
+msgid "Parent Speaker"
+msgstr ""
+
+#: inc/custom-post-types/speakers.php:11
+msgid "All Speakers"
+msgstr ""
+
+#: inc/custom-post-types/speakers.php:12
+msgid "View Speaker"
+msgstr ""
+
+#: inc/custom-post-types/speakers.php:13
+msgid "Add New Speaker"
+msgstr ""
+
+#: inc/custom-post-types/speakers.php:15
+msgid "Edit Speaker"
+msgstr ""
+
+#: inc/custom-post-types/speakers.php:16
+msgid "Update Speaker"
+msgstr ""
+
+#: inc/custom-post-types/speakers.php:17
+msgid "Search Speaker"
+msgstr ""
+
+#: inc/custom-taxonomies/session-types.php:7
+#: inc/custom-taxonomies/session-types.php:17
+msgid "Types"
+msgstr ""
+
+#: inc/custom-taxonomies/session-types.php:8
+msgid "Type"
+msgstr ""
+
+#: inc/custom-taxonomies/session-types.php:9
+msgid "Search Type"
+msgstr ""
+
+#: inc/custom-taxonomies/session-types.php:10
+msgid "All Type"
+msgstr ""
+
+#: inc/custom-taxonomies/session-types.php:11
+msgid "Parent Type"
+msgstr ""
+
+#: inc/custom-taxonomies/session-types.php:12
+msgid "Parent Type:"
+msgstr ""
+
+#: inc/custom-taxonomies/session-types.php:13
+msgid "Edit Type"
+msgstr ""
+
+#: inc/custom-taxonomies/session-types.php:14
+msgid "Update Type"
+msgstr ""
+
+#: inc/custom-taxonomies/session-types.php:15
+msgid "Add New Type"
+msgstr ""
+
+#: inc/custom-taxonomies/session-types.php:16
+msgid "New Type Name"
+msgstr ""
+
+#: inc/custom-taxonomies/years.php:7 inc/custom-taxonomies/years.php:17
+msgid "Years"
+msgstr ""
+
+#: inc/custom-taxonomies/years.php:8
+msgid "Year"
+msgstr ""
+
+#: inc/custom-taxonomies/years.php:9
+msgid "Search Years"
+msgstr ""
+
+#: inc/custom-taxonomies/years.php:10
+msgid "All Years"
+msgstr ""
+
+#: inc/custom-taxonomies/years.php:11
+msgid "Parent Year"
+msgstr ""
+
+#: inc/custom-taxonomies/years.php:12
+msgid "Parent Year:"
+msgstr ""
+
+#: inc/custom-taxonomies/years.php:13
+msgid "Edit Year"
+msgstr ""
+
+#: inc/custom-taxonomies/years.php:14
+msgid "Update Year"
+msgstr ""
+
+#: inc/custom-taxonomies/years.php:15
+msgid "Add New Year"
+msgstr ""
+
+#: inc/custom-taxonomies/years.php:16
+msgid "New Year Name"
+msgstr ""
+
+#: inc/taxonomy-form-fields/categories/colors.php:13
+#: inc/taxonomy-form-fields/categories/colors.php:31
+msgid "Theme Color"
+msgstr ""
+
+#: inc/taxonomy-form-fields/categories/colors.php:17
+#: inc/taxonomy-form-fields/categories/colors.php:35
+#: inc/taxonomy-form-fields/categories/images.php:37
+msgid "Select a color for the theme."
+msgstr ""
+
+#: inc/taxonomy-form-fields/categories/images.php:13
+#: inc/taxonomy-form-fields/categories/images.php:31
+msgid "Theme Image"
+msgstr ""
+
+#: inc/taxonomy-form-fields/categories/images.php:17
+msgid "Select a image for the theme."
+msgstr ""
+
+#: inc/template-parts/content-list-posts.php:52
+#: inc/template-parts/content-single-post.php:52
+#, php-format
+msgid "Continue reading %s <span class=\"meta-nav\">&rarr;</span>"
+msgstr ""
+
+#: index.php:10
+msgid "Blog"
+msgstr ""
+
+#: page-themes.php:55
+msgid " #"
+msgstr ""
+
+#: widgets/camp-organizers.php:88 widgets/camp-themes.php:69
+msgid "New Title"
+msgstr ""
+
+#: widgets/camp-organizers.php:93 widgets/camp-themes.php:74
+msgid "Title: "
+msgstr ""
