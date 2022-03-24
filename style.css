@@ -5,7 +5,7 @@
   Author:       Open Development Cambodia
   Author URI: 
   Template:     event-star
-  Version:      1.0.27
+  Version:      2.0.0
   License:
   License URI:
   Tags:         responsive-layout
@@ -483,6 +483,16 @@ small {
   background-repeat: no-repeat;
   background-size: cover;
 }
+
+.wpfrank-flickr-div figure {
+  margin: auto;
+}
+
+.wpfrank-flickr-div .wp-caption .wp-caption-text {
+  margin-bottom: 2em !important;
+  margin-top: 0.5em !important;
+}
+
 /* Extra Small Devices */
 @media only screen and (max-width: 576px) {
   .blog-feature-image {
