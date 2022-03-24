@@ -13,9 +13,13 @@
  */
 
 /* General */
-.km-KH,
-body.km-KH {
-  font-family: "Siemreap", "Open Sans", "Helvetica", "Arial", sans-serif !important;
+body:lang(km) h1, body:lang(km) h2, body:lang(km) h3, body:lang(km) h4, body:lang(km) h5, body:lang(km) h6 {
+  font-family: 'Siemreap', serif;
+}
+
+body:lang(km) p, body:lang(km) a, body:lang(km) b, body:lang(km) strong, body:lang(km) ul, body:lang(km) li, body:lang(km) td, body:lang(km) th, body:lang(km) div, body:lang(km) input, body:lang(km) text, body:lang(km) span, body:lang(km) select, body:lang(km) small {
+  font-family: 'Siemreap', cursive;
+  line-height: 1.9em;
 }
 
 body {
@@ -26,9 +30,17 @@ body {
   background: #fdfdfd;
 }
 
-h1, h2, h3, h4, h5, h6, p, a, b, strong, ul, li, td, th, div, input, text, span, select, small {
-  font-family: inherit !important;
-  line-height: 1.5em;
+#primary {
+  margin-bottom: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Roboto', sans-serif;
+}
+
+p, a, b strong, ul, li, td, th, div, input, text, span, select, small {
+  font-family: 'Roboto', sans-serif;
+  line-height: 1.9em;
 }
 
 a {
@@ -181,13 +193,16 @@ small {
 }
 
 .section-title h2:after {
-  border: 1px solid;
   content: "";
   display: block;
-  left: 50%;
-  margin: 15px 0 20px -30px;
-  position: absolute;
+  height: 2px;
   width: 55px;
+  left: 50%;
+  margin-top: 1em;
+  margin-left: -25px;
+  position: absolute;
+  background-color: #06323d;
+  color: #fff;
 }
 
 .section-title-left h2:after {
@@ -255,8 +270,16 @@ small {
   margin-top: 2em;
 }
 
+.top-header a {
+  font-size: 1.7rem;
+}
+
 .top-header ul li a:hover {
   color: #95c841 !important;
+}
+
+.top-header img.qtranxs-flag {
+  width: 2rem;
 }
 
 .width-80-percent {
@@ -345,6 +368,10 @@ small {
 
 .info-icon-box-wrapper .info-icon-box {
   border: none;
+}
+
+.widget-title:after {
+  margin-top: 1em;
 }
 /* END Widgets */
 
@@ -482,6 +509,14 @@ small {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+}
+
+.entry-content a {
+  text-decoration: none;
+}
+
+.wp-caption {
+  width: 100% !important;
 }
 
 .wpfrank-flickr-div figure {

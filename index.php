@@ -24,50 +24,56 @@ global $event_star_customizer_all_values;
     <div id="primary" class="content-area">
         <main id="main" class="site-main" role="main">
             <!--post thumbnail options-->
-            <div class="image-wrap margin-top-3-em">
-                <div class="post-thumb">
-                    <?php
-                    $thumbnail_size = array( 200, 150 );
+            <?php
+            $show_carousel = false;
 
-                    $args = [
-                        'orderby'        => 'post_date',
-                        'order'          => 'DESC',
-                        'post_status'    => 'publish',
-                        'meta_query'     => [
-                            [
-                                'key'     => '_thumbnail_id',
-                                'value'   => '',
-                                'compare' => '!='
-                            ]
-                        ],
-                        'posts_per_page' => 1
-                    ];
+            if ( $show_carousel ) {
+            ?>
+                <div class="image-wrap margin-top-3-em">
+                    <div class="post-thumb">
+                        <?php
+                        $thumbnail_size = array( 200, 150 );
 
-                    $recent_posts_with_img = new WP_Query( $args );
-
-                    if ( $recent_posts_with_img->have_posts() ) {
-                        $number_of_post_with_image = (int) $recent_posts_with_img->found_posts;
-
-                        while ( $recent_posts_with_img->have_posts() ) {
-                            $recent_posts_with_img->the_post();
-
-                            if ( has_post_thumbnail() ) {
-                                $recent_feature_image_url = get_the_post_thumbnail_url( get_the_ID(), $thumbnail_size );
-                            }
-                        }
-
-                        // Carousel
-                        $attributes = [
-                            'number_of_post_with_image' => $number_of_post_with_image
+                        $args = [
+                            'orderby'        => 'post_date',
+                            'order'          => 'DESC',
+                            'post_status'    => 'publish',
+                            'meta_query'     => [
+                                [
+                                    'key'     => '_thumbnail_id',
+                                    'value'   => '',
+                                    'compare' => '!='
+                                ]
+                            ],
+                            'posts_per_page' => 1
                         ];
 
-                        get_ictcamp_template( 'blogs/carousel', $attributes, false );
-                    } 
-                    ?>
-                </div><!-- .post-thumb-->
-            </div>
+                        $recent_posts_with_img = new WP_Query( $args );
 
-            <?php
+                        if ( $recent_posts_with_img->have_posts() ) {
+                            $number_of_post_with_image = (int) $recent_posts_with_img->found_posts;
+
+                            while ( $recent_posts_with_img->have_posts() ) {
+                                $recent_posts_with_img->the_post();
+
+                                if ( has_post_thumbnail() ) {
+                                    $recent_feature_image_url = get_the_post_thumbnail_url( get_the_ID(), $thumbnail_size );
+                                }
+                            }
+
+                            // Carousel
+                            $attributes = [
+                                'number_of_post_with_image' => $number_of_post_with_image
+                            ];
+
+                            get_ictcamp_template( 'blogs/carousel', $attributes, $show_carousel );
+                        } 
+                        ?>
+                    </div>
+                </div>  
+            <?php    
+            }
+
             if ( have_posts() ) :
             ?>
                 <div class="setion-body margin-top-3-em">
