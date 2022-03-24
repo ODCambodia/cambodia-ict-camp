@@ -60,7 +60,12 @@ function display_custom_post_type( $atts ) {
 
         $flex_box_row = ( ! strcmp( $shortcode_atts['flex_box_row'], 'true' ) ) ? 'flex-box-row align-items-center' : '';
         $open_new_tab = ( ! strcmp( $shortcode_atts['open_new_tab'], 'true' ) ) ? ' target="_blank"' : '';
-        $post_list .= ( ! strcmp( $shortcode_atts['display'], 'list' ) ) ? '<ul>' : ( ! strcmp( $shortcode_atts['row_container'], 'true' ) ) ? '<div class="row ' . $flex_box_row . '">' : '';
+
+        if ( !strcmp( $shortcode_atts['display'], 'list' ) ) :
+            $post_list .= '<ul>';
+        else :
+            $post_list .= ( ! strcmp( $shortcode_atts['row_container'], 'true' ) ) ? '<div class="row ' . $flex_box_row . '">' : '';
+        endif;
 
         while ( $custom_posts->have_posts() ) {
 
@@ -126,8 +131,12 @@ function display_custom_post_type( $atts ) {
 
             $post_list .= ( ! strcmp( $shortcode_atts['display'], 'list' ) ) ? '</li>' : '</div>';
         }
-
-        $post_list .= ( $shortcode_atts['display'] == 'list' ) ? '</ul>' : ( $shortcode_atts['row_container'] == 'true' ) ? '</div>' : '';
+        
+        if ( ! strcmp( $shortcode_atts['display'], 'list') ) {
+            $post_list .= '</ul>';
+        } else {
+            $post_list .= ( ! strcmp( $shortcode_atts['row_container'], 'true' ) ) ? '</div>' : '';
+        }
     }
     wp_reset_postdata();
 

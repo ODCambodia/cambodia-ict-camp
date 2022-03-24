@@ -22,15 +22,14 @@ global $event_star_customizer_all_values;
         <main id="main" class="site-main" role="main">
             <?php
             $args = [
-                'taxonomy' => 'facilitator_group',
-                'orderby'  => 'slug',
-                'order'  => 'DESC',
+                'taxonomy'  => 'facilitator_group',
+                'orderby'   => 'slug',
+                'order'     => 'DESC',
             ];
 
             $facilitator_terms = get_terms( $args );
 
             if ( !empty( $facilitator_terms ) && !is_wp_error( $facilitator_terms ) ) {
-                // echo '<div class="section padding-top-1-em">';
                 foreach ( $facilitator_terms as $facilitator_term ) {
                     wp_reset_query();
 
