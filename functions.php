@@ -7,7 +7,7 @@ function cambodia_ict_camp_parent_child_theme_scripts()
 
     wp_enqueue_style('bootstrap', get_template_directory_uri() . '/assets/library/bootstrap/css/bootstrap.min.css', array(), '3.3.6');
     wp_enqueue_style('font-awesome', get_template_directory_uri() . '/assets/library/Font-Awesome/css/font-awesome.min.css', array(), '4.7.0');
-    wp_enqueue_style('	', get_template_directory_uri() . '/assets/library/slick/slick.css', array(), '1.3.3');
+    wp_enqueue_style('slick', get_template_directory_uri() . '/assets/library/slick/slick.css', array(), '1.3.3');
     wp_enqueue_style('magnific-popup', get_template_directory_uri() . '/assets/library/magnific-popup/magnific-popup.css', array(), '1.1.0');
     wp_enqueue_style($parenthandle, get_template_directory_uri() . '/style.css', array(), $theme->parent()->get('Version'));
     wp_enqueue_style('cambodia-ict-camp-style', get_stylesheet_uri(), array($parenthandle), $theme->get('Version'));

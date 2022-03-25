@@ -397,6 +397,10 @@ small {
 /* END Homepage Slider */
 
 /* Jquery UI Accordion */
+#accordion {
+  margin-bottom: 2em;
+}
+
 .ui-accordion .ui-accordion-header {
   cursor: pointer;
   display: block;
