@@ -20,12 +20,15 @@ function cambodia_ict_camp_theme_scripts()
 {
     $theme = wp_get_theme();
 
-    wp_enqueue_style('cambodia-ict-camp-style', get_stylesheet_uri(), array(), $theme->get('Version'));
+    wp_enqueue_script('particles-js', get_stylesheet_directory_uri() . '/node_modules/particles.js/particles.js', array(), '2.0.0', true);
+    wp_enqueue_script('particles-js-config', get_stylesheet_directory_uri() . '/assets/js/particles-config.js', array(), '', true);
 
     if (is_page_template('template-accordion.php')) {
         wp_enqueue_script('jquery-ui-accordion');
         wp_enqueue_script('custom-accordion', get_stylesheet_directory_uri() . '/assets/js/accordion.js', ['jquery'], '', true);
     }
+
+    wp_enqueue_style('cambodia-ict-camp-style', get_stylesheet_uri(), array(), $theme->get('Version'));
 }
 add_action('wp_enqueue_scripts', 'cambodia_ict_camp_theme_scripts');
 

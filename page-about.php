@@ -4,36 +4,37 @@ get_header();
 global $event_star_customizer_all_values;
 $event_star_hide_front_page_header = $event_star_customizer_all_values['event-star-hide-front-page-header'];
 
-if(
-	( is_front_page() && 1 != $event_star_hide_front_page_header )
+if (
+	(is_front_page() && 1 != $event_star_hide_front_page_header)
 	|| !is_front_page()
 ) {
-	?>
+?>
 	<div class="wrapper inner-main-title">
+		<div id="particles-js"></div>
 		<div class="container">
 			<header class="entry-header init-animate">
 				<?php
-                the_title( '<h1 class="entry-title">', '</h1>' );
-                if( 1 == $event_star_customizer_all_values['event-star-show-breadcrumb'] ){
+				the_title('<h1 class="entry-title">', '</h1>');
+				if (1 == $event_star_customizer_all_values['event-star-show-breadcrumb']) {
 					event_star_breadcrumbs();
 				}
 				?>
 			</header><!-- .entry-header -->
 		</div>
 	</div>
-	<?php
+<?php
 }
 ?>
 <div id="content" class="site-content container clearfix">
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
-            <?php
-            while ( have_posts() ) : the_post();
+			<?php
+			while (have_posts()) : the_post();
 
-                get_template_part( 'inc/template-parts/content', 'page' );
+				get_template_part('inc/template-parts/content', 'page');
 
-            endwhile; // End of the loop.
-            ?>
+			endwhile; // End of the loop.
+			?>
 
 			<!-- Organizer Section -->
 			<?php
@@ -194,14 +195,15 @@ if(
             }
 
 						*/
-            ?><!-- END Suppporter Section -->
-        </main><!-- #main -->
-    </div><!-- #primary -->
+			?>
+			<!-- END Suppporter Section -->
+		</main><!-- #main -->
+	</div><!-- #primary -->
 
-    <?php
-    get_sidebar( 'left' );
-    get_sidebar();
-    ?>
+	<?php
+	get_sidebar('left');
+	get_sidebar();
+	?>
 </div><!-- #content -->
 
 <?php get_footer();

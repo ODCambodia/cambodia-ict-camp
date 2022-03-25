@@ -5,14 +5,15 @@ global $event_star_customizer_all_values;
 
 $event_star_hide_front_page_header = $event_star_customizer_all_values['event-star-hide-front-page-header'];
 
-if( ( is_front_page() && 1 != $event_star_hide_front_page_header ) || !is_front_page() ) {
+if ((is_front_page() && 1 != $event_star_hide_front_page_header) || !is_front_page()) {
 ?>
     <div class="wrapper inner-main-title">
+        <div id="particles-js"></div>
         <div class="container">
             <header class="entry-header init-animate">
                 <?php
-                the_title( '<h1 class="entry-title">', '</h1>' );
-                if( 1 == $event_star_customizer_all_values['event-star-show-breadcrumb'] ){
+                the_title('<h1 class="entry-title">', '</h1>');
+                if (1 == $event_star_customizer_all_values['event-star-show-breadcrumb']) {
                     event_star_breadcrumbs();
                 }
                 ?>
@@ -42,16 +43,16 @@ if( ( is_front_page() && 1 != $event_star_hide_front_page_header ) || !is_front_
                 'exclude'    => 1
             ];
 
-            $themes = get_categories( $args );
+            $themes = get_categories($args);
 
-            foreach( $themes as $theme ) {
-                $theme_color = get_term_meta( $theme->term_id, '_category_color_value_key', true );
+            foreach ($themes as $theme) {
+                $theme_color = get_term_meta($theme->term_id, '_category_color_value_key', true);
             ?>
                 <div class="col-xs-12" id="<?php echo $theme->slug; ?>">
-                    <h2 style="color: <?php echo esc_attr( $theme_color ); ?>">
-                        <?php _e( $theme->name ); ?>
+                    <h2 style="color: <?php echo esc_attr($theme_color); ?>">
+                        <?php _e($theme->name); ?>
                     </h2>
-                    <p><?php _e( $theme->description ); ?></p>
+                    <p><?php _e($theme->description); ?></p>
                 </div>
             <?php
             }
@@ -60,7 +61,7 @@ if( ( is_front_page() && 1 != $event_star_hide_front_page_header ) || !is_front_
     </div><!-- #primary -->
 
     <?php
-    get_sidebar( 'left' );
+    get_sidebar('left');
     get_sidebar();
     ?>
 </div><!-- #content -->

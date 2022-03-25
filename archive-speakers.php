@@ -10,6 +10,7 @@ global $event_star_customizer_all_values;
             <h1 class="page-title"><?php _e( post_type_archive_title( '', false ), 'ict_camp' ); ?></h1>
 
             <?php
+            var_dump($event_star_customizer_all_values['event-star-show-breadcrumb'] ); die();
             if( 1 == $event_star_customizer_all_values['event-star-show-breadcrumb'] ){
                 event_star_breadcrumbs();
             }

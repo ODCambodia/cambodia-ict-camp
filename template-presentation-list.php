@@ -15,6 +15,7 @@ if(
 ) {
     ?>
     <div class="wrapper inner-main-title">
+        <div id="particles-js"></div>
         <div class="container">
             <header class="entry-header init-animate">
                 <?php
