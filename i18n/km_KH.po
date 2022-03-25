@@ -1,28 +1,60 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: cambodia-ict-camp\n"
-"POT-Creation-Date: 2019-02-07 17:15+0700\n"
-"PO-Revision-Date: 2019-02-07 17:16+0700\n"
+"POT-Creation-Date: 2022-03-25 22:45+0700\n"
+"PO-Revision-Date: 2022-03-25 22:52+0700\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: km_KH\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 2.2.1\n"
-"X-Poedit-Basepath: ..\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: Poedit 3.0.1\n"
+"X-Poedit-Basepath: ..\n"
 "X-Poedit-SourceCharset: UTF-8\n"
-"X-Poedit-KeywordsList: _;_e;__;_x;esc_html__\n"
+"X-Poedit-KeywordsList: _;_e;__;_x;esc_html__;esc_html_e\n"
 "X-Poedit-SearchPath-0: .\n"
+
+#: 404.php:19
+msgid "Page Not Found"
+msgstr "ទំព័រពុំអាចរកបាន"
+
+#: 404.php:33
+msgid "Sorry the page your are looking for does not exist."
+msgstr "សូមអភ័យទោស ទំព័រដែលលោកអ្នកកំពុងស្វែងរកពុំមាននោះទេ"
+
+#: 404.php:36
+msgid "Return Home"
+msgstr "ត្រលប់ទៅទំព័រដើម"
 
 #: hooks/footer.php:90
 #, php-format
 msgid "%1$s by %2$s"
 msgstr ""
 
-#: hooks/header.php:226
+#: hooks/header.php:126
+msgid "Skip to content"
+msgstr ""
+
+#: hooks/header.php:238
 msgid "Event Booking"
+msgstr ""
+
+#: hooks/pagination.php:6
+msgid "Previous"
+msgstr "ត្រលប់ក្រោយ"
+
+#: hooks/pagination.php:7
+msgid "Next"
+msgstr "បន្ទាប់"
+
+#: hooks/slider-selection.php:34
+msgid "Event Star"
+msgstr ""
+
+#: hooks/slider-selection.php:37
+msgid "The modern Event WordPress Theme"
 msgstr ""
 
 #: hooks/slider-selection.php:197
@@ -189,7 +221,7 @@ msgstr "អ្នកសម្របសម្រួល"
 
 #: inc/custom-post-types/facilitators.php:8
 msgid "Facilitator"
-msgstr ""
+msgstr "អ្នកសម្របសម្រួល"
 
 #: inc/custom-post-types/facilitators.php:10
 msgid "Parent Facilitator"
@@ -216,10 +248,8 @@ msgid "Update Facilitator"
 msgstr ""
 
 #: inc/custom-post-types/facilitators.php:17
-#, fuzzy
-#| msgid "Search Donor"
 msgid "Search Facilitator"
-msgstr "ស្វែងរកម្ចាស់ជំនួយ"
+msgstr "ស្វែងរកអ្នកសម្របសម្រួល"
 
 #: inc/custom-post-types/organizers.php:7
 #: inc/custom-post-types/organizers.php:9
@@ -333,8 +363,6 @@ msgid "Update Slide Presentation"
 msgstr ""
 
 #: inc/custom-post-types/presentations.php:17
-#, fuzzy
-#| msgid "Search Donor"
 msgid "Search Slide Presentation"
 msgstr "ស្វែងរកម្ចាស់ជំនួយ"
 
@@ -392,44 +420,32 @@ msgid "Speaker"
 msgstr "វាគ្មិន"
 
 #: inc/custom-post-types/speakers.php:10
-#, fuzzy
-#| msgid "Speaker"
 msgid "Parent Speaker"
-msgstr "វាគ្មិន"
+msgstr ""
 
 #: inc/custom-post-types/speakers.php:11
 msgid "All Speakers"
 msgstr "វាគ្មិនទាំងអស់"
 
 #: inc/custom-post-types/speakers.php:12
-#, fuzzy
-#| msgid "Speaker"
 msgid "View Speaker"
-msgstr "វាគ្មិន"
+msgstr ""
 
 #: inc/custom-post-types/speakers.php:13
-#, fuzzy
-#| msgid "All Speakers"
 msgid "Add New Speaker"
-msgstr "វាគ្មិនទាំងអស់"
+msgstr ""
 
 #: inc/custom-post-types/speakers.php:15
-#, fuzzy
-#| msgid "Speaker"
 msgid "Edit Speaker"
-msgstr "វាគ្មិន"
+msgstr ""
 
 #: inc/custom-post-types/speakers.php:16
-#, fuzzy
-#| msgid "Speaker"
 msgid "Update Speaker"
-msgstr "វាគ្មិន"
+msgstr ""
 
 #: inc/custom-post-types/speakers.php:17
-#, fuzzy
-#| msgid "Search Organizer"
 msgid "Search Speaker"
-msgstr "ស្វែងរកអ្នករៀបចំកម្មវិធី"
+msgstr ""
 
 #: inc/custom-taxonomies/facilitator-groups.php:7
 #: inc/custom-taxonomies/facilitator-groups.php:17
@@ -441,10 +457,8 @@ msgid "Group"
 msgstr ""
 
 #: inc/custom-taxonomies/facilitator-groups.php:9
-#, fuzzy
-#| msgid "Search Donor"
 msgid "Search Group"
-msgstr "ស្វែងរកម្ចាស់ជំនួយ"
+msgstr ""
 
 #: inc/custom-taxonomies/facilitator-groups.php:10
 msgid "All Group"
@@ -575,14 +589,14 @@ msgstr ""
 msgid "Select a image for the theme."
 msgstr ""
 
-#: inc/template-parts/content-list-posts.php:56
+#: inc/template-parts/content-grid-3-cols.php:77
 #: inc/template-parts/content-single-post.php:35
 #: inc/template-parts/content.php:56
 #, php-format
 msgid "Continue reading %s <span class=\"meta-nav\">&rarr;</span>"
 msgstr ""
 
-#: inc/template-parts/content-list-posts.php:60
+#: inc/template-parts/content-grid-3-cols.php:82
 #: inc/template-parts/content-page.php:17
 #: inc/template-parts/content-single-post.php:39
 #: inc/template-parts/content.php:60
@@ -611,7 +625,7 @@ msgstr ""
 msgid "Error locating %s for inclusion"
 msgstr ""
 
-#: index.php:10
+#: index.php:11
 msgid "Blog"
 msgstr "ប្លក់"
 
@@ -637,6 +651,70 @@ msgstr ""
 
 #: widgets/camp-posts-no-img.php:45
 msgid "Show posts from selected category with advanced options"
+msgstr ""
+
+#: widgets/camp-posts-no-img.php:71
+msgid "Section ID"
+msgstr ""
+
+#: widgets/camp-posts-no-img.php:82
+msgid ""
+"Enter a Unique Section ID. You can use this ID in Menu item for enabling One "
+"Page Menu."
+msgstr ""
+
+#: widgets/camp-posts-no-img.php:89
+msgid "Title"
+msgstr ""
+
+#: widgets/camp-posts-no-img.php:101
+msgid "Show"
+msgstr ""
+
+#: widgets/camp-posts-no-img.php:123
+msgid "Select Category"
+msgstr ""
+
+#: widgets/camp-posts-no-img.php:147
+msgid "Select Tag"
+msgstr ""
+
+#: widgets/camp-posts-no-img.php:172
+msgid "Number of posts to show"
+msgstr ""
+
+#: widgets/camp-posts-no-img.php:184
+msgid "Column Number"
+msgstr ""
+
+#: widgets/camp-posts-no-img.php:206
+msgid "Display Type"
+msgstr ""
+
+#: widgets/camp-posts-no-img.php:227 widgets/camp-posts-no-img.php:248
+msgid "Order by"
+msgstr ""
+
+#: widgets/camp-posts-no-img.php:276
+msgid "Enable Prev - Next on Carousel Column"
+msgstr ""
+
+#: widgets/camp-posts-no-img.php:282
+msgid "Normal Featured Post Image"
+msgstr ""
+
+#: widgets/camp-posts-no-img.php:305
+msgid "Show feature image of the post"
+msgstr ""
+
+#: widgets/camp-posts-no-img.php:310
+msgid "Background Options"
+msgstr ""
+
+#: widgets/camp-posts-no-img.php:329
+msgid ""
+"Note: Some of the features only work in \"Home main content area\" due to "
+"minimum width in other areas."
 msgstr ""
 
 #: widgets/camp-themes.php:15
