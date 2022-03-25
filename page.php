@@ -1,12 +1,15 @@
 <?php
 
 /**
- * Template Name: Accordion Template
+ * The template for displaying all pages.
+ *
+ * @package Cambodia ICT Camp Theme
  */
 
 get_header();
 
 global $event_star_customizer_all_values;
+
 $event_star_hide_front_page_header = $event_star_customizer_all_values['event-star-hide-front-page-header'];
 
 if (
@@ -20,7 +23,6 @@ if (
             <header class="entry-header init-animate">
                 <?php
                 the_title('<h1 class="entry-title">', '</h1>');
-
                 if (1 == $event_star_customizer_all_values['event-star-show-breadcrumb']) {
                     event_star_breadcrumbs();
                 }
@@ -32,6 +34,12 @@ if (
 }
 ?>
 <div id="content" class="site-content container clearfix">
+    <?php
+    $sidebar_layout = event_star_sidebar_selection(get_the_ID());
+    if ('both-sidebar' == $sidebar_layout) {
+        echo '<div id="primary-wrap" class="clearfix">';
+    }
+    ?>
     <div id="primary" class="content-area">
         <main id="main" class="site-main" role="main">
             <?php
@@ -51,6 +59,9 @@ if (
     <?php
     get_sidebar('left');
     get_sidebar();
+    if ('both-sidebar' == $sidebar_layout) {
+        echo '</div>';
+    }
     ?>
 </div><!-- #content -->
 <?php get_footer();

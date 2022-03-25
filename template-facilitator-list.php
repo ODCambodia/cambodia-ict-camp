@@ -1,4 +1,5 @@
-<?php 
+<?php
+
 /**
  * Template Name: Facilitator List Template
  */
@@ -9,18 +10,19 @@ global $event_star_customizer_all_values;
 
 $event_star_hide_front_page_header = $event_star_customizer_all_values['event-star-hide-front-page-header'];
 
-if(
-    ( is_front_page() && 1 != $event_star_hide_front_page_header )
+if (
+    (is_front_page() && 1 != $event_star_hide_front_page_header)
     || !is_front_page()
 ) {
-    ?>
+?>
     <div class="wrapper inner-main-title">
+        <div id="particles-js"></div>
         <div class="container">
             <header class="entry-header init-animate">
                 <?php
-                the_title( '<h1 class="entry-title">', '</h1>' );
+                the_title('<h1 class="entry-title">', '</h1>');
 
-                if( 1 == $event_star_customizer_all_values['event-star-show-breadcrumb'] ) {
+                if (1 == $event_star_customizer_all_values['event-star-show-breadcrumb']) {
                     event_star_breadcrumbs();
                 }
                 ?>
@@ -41,14 +43,14 @@ if(
                 'order'     => 'DESC',
             ];
 
-            $facilitator_terms = get_terms( $args );
+            $facilitator_terms = get_terms($args);
 
-            if ( !empty( $facilitator_terms ) && !is_wp_error( $facilitator_terms ) ) {
-                $page_camp_year = get_the_terms( $post->ID, 'camp_year' );
+            if (!empty($facilitator_terms) && !is_wp_error($facilitator_terms)) {
+                $page_camp_year = get_the_terms($post->ID, 'camp_year');
                 $camp_year = $page_camp_year[0]->name;
 
                 // echo '<div class="section padding-top-1-em">';
-                foreach ( $facilitator_terms as $facilitator_term ) {
+                foreach ($facilitator_terms as $facilitator_term) {
                     wp_reset_query();
 
                     $args = [
@@ -65,28 +67,28 @@ if(
                         ]
                     ];
 
-                    $facilitator_group = new WP_Query( $args );
+                    $facilitator_group = new WP_Query($args);
 
-                    if ( $facilitator_group->have_posts() ) {
-                    ?>
+                    if ($facilitator_group->have_posts()) {
+            ?>
                         <div class="section padding-top-1-em" id="<?php echo $facilitator_term->slug; ?>">
                             <div class="section-title">
-                                <h2 class="text-center"><?php _e( $facilitator_term->name ); ?></h2>
+                                <h2 class="text-center"><?php _e($facilitator_term->name); ?></h2>
                             </div>
                             <div class="setcion-body margin-top-3-em">
                                 <?php
                                 $counter = 1;
                                 $wrap_count = 6;
-                                while ( $facilitator_group->have_posts() ) {
+                                while ($facilitator_group->have_posts()) {
                                     $facilitator_group->the_post();
 
-                                    if ($counter%$wrap_count == 1 ) {
+                                    if ($counter % $wrap_count == 1) {
                                         echo '<div class="row flex-box-row">';
                                     }
 
-                                    get_template_part( 'inc/template-parts/facilitators/content', 'list' );
+                                    get_template_part('inc/template-parts/facilitators/content', 'list');
 
-                                    if( ($counter%$wrap_count == 0) || ($counter == $facilitator_group->post_count) ) {
+                                    if (($counter % $wrap_count == 0) || ($counter == $facilitator_group->post_count)) {
                                         echo '</div>';
                                     }
 
@@ -95,17 +97,17 @@ if(
                                 ?>
                             </div>
                         </div>
-                    <?php
+            <?php
                     }
                 }
             } else {
-                get_template_part( 'template-parts/content', 'none' );
+                get_template_part('template-parts/content', 'none');
             }
             ?>
         </main><!-- #main -->
     </div><!-- #primary -->
     <?php
-    get_sidebar( 'left' );
+    get_sidebar('left');
     get_sidebar();
     ?>
 </div><!-- #content -->

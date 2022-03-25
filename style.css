@@ -370,6 +370,10 @@ small {
   border: none;
 }
 
+.widget-title {
+  margin-top: 28px;
+}
+
 .widget-title:after {
   margin-top: 1em;
 }
@@ -508,6 +512,19 @@ small {
   text-align: center;
 }
 /* END Carousel Slider */
+
+/* Particles JS */
+canvas {
+  display: block;
+}
+
+#particles-js {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+	background: #06323d;
+}
+/* End Particles JS */
 
 .blog-feature-image {
   background-position: center;
