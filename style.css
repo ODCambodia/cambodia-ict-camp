@@ -13,7 +13,8 @@
  */
 
 /* General */
-ul, ol {
+.entry-content ul,
+.entry-content ol {
   margin: 0 0 1.5em 0 !important;
 }
 
