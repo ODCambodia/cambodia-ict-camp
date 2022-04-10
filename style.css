@@ -5,7 +5,7 @@
   Author:       Open Development Cambodia
   Author URI: 
   Template:     event-star
-  Version:      2.0.0
+  Version:      2.0.1
   License:
   License URI:
   Tags:         responsive-layout
@@ -13,6 +13,10 @@
  */
 
 /* General */
+ul, ol {
+  margin: 0 0 1.5em 0 !important;
+}
+
 body:lang(km) h1, body:lang(km) h2, body:lang(km) h3, body:lang(km) h4, body:lang(km) h5, body:lang(km) h6 {
   font-family: 'Siemreap', serif;
 }
@@ -512,6 +516,13 @@ small {
   text-align: center;
 }
 /* END Carousel Slider */
+
+/* Bootstrap */
+.modal-content {
+  top: 3em;
+}
+
+/* END Bootstrap */
 
 /* Particles JS */
 canvas {
