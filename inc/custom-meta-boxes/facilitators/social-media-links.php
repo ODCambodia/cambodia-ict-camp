@@ -35,7 +35,7 @@ function save_facilitators_social_media_links_data( $post_id )
 		return;
 	}
 
-	$facilitators_linked_in_link = sanitize_text_field( $_POST['facilitators_linkedin_link_field'] );
+	$facilitators_linked_in_link = esc_url_raw( $_POST['facilitators_linkedin_link_field']);
 
 	update_post_meta( $post_id, '_facilitators_social_media_links_value_key', $facilitators_linked_in_link );
 }

@@ -83,6 +83,7 @@ require_once(__DIR__ . '/inc/custom-taxonomies/years.php');
 
 // Register Custom Post Types
 require_once(__DIR__ . '/inc/custom-post-types/announcements.php');
+require_once(__DIR__ . '/inc/custom-post-types/camp-themes.php');
 require_once(__DIR__ . '/inc/custom-post-types/donors.php');
 require_once(__DIR__ . '/inc/custom-post-types/facilitators.php');
 require_once(__DIR__ . '/inc/custom-post-types/organizers.php');

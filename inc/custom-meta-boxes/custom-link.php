@@ -34,7 +34,7 @@ function save_custom_link_data( $post_id )
 		return;
 	}
 
-	$custom_links_field = sanitize_text_field( $_POST['custom_link_field'] );
+	$custom_links_field = esc_url_raw( $_POST['custom_link_field'] );
 
 	update_post_meta( $post_id, '_custom_link_value_key', $custom_links_field );
 }

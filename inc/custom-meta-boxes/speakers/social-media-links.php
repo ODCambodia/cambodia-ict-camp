@@ -35,7 +35,7 @@ function save_speakers_social_media_links_data( $post_id )
         return;
     }
 
-    $speakers_linked_in_link = sanitize_text_field( $_POST['speakers_linkedin_link_field'] );
+    $speakers_linked_in_link = esc_url_raw( $_POST['speakers_linkedin_link_field'] );
 
     update_post_meta( $post_id, '_speakers_social_media_links_value_key', $speakers_linked_in_link );
 }
