@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: cambodia-ict-camp\n"
-"POT-Creation-Date: 2022-03-25 22:45+0700\n"
-"PO-Revision-Date: 2022-03-25 22:52+0700\n"
+"POT-Creation-Date: 2022-04-11 14:46+0700\n"
+"PO-Revision-Date: 2022-04-11 15:32+0700\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: km_KH\n"
@@ -101,7 +101,7 @@ msgid "Social Media Links"
 msgstr ""
 
 #: inc/custom-post-types/announcements.php:7
-#: inc/custom-post-types/announcements.php:9
+#: inc/custom-post-types/announcements.php:9 single-announcements.php:18
 msgid "Announcements"
 msgstr "សេចក្តីប្រកាស"
 
@@ -126,7 +126,7 @@ msgid "Add New Announcement"
 msgstr ""
 
 #: inc/custom-post-types/announcements.php:14
-#: inc/custom-post-types/donors.php:14
+#: inc/custom-post-types/camp-themes.php:14 inc/custom-post-types/donors.php:14
 #: inc/custom-post-types/facilitators.php:14
 #: inc/custom-post-types/organizers.php:14
 #: inc/custom-post-types/partners.php:14
@@ -148,7 +148,7 @@ msgid "Search Announcement"
 msgstr ""
 
 #: inc/custom-post-types/announcements.php:18
-#: inc/custom-post-types/donors.php:18
+#: inc/custom-post-types/camp-themes.php:18 inc/custom-post-types/donors.php:18
 #: inc/custom-post-types/facilitators.php:18
 #: inc/custom-post-types/organizers.php:18
 #: inc/custom-post-types/partners.php:18
@@ -158,7 +158,7 @@ msgid "Not Found"
 msgstr "ព័ត៌មានពុំអាចរកបាន"
 
 #: inc/custom-post-types/announcements.php:19
-#: inc/custom-post-types/donors.php:19
+#: inc/custom-post-types/camp-themes.php:19 inc/custom-post-types/donors.php:19
 #: inc/custom-post-types/facilitators.php:19
 #: inc/custom-post-types/organizers.php:19
 #: inc/custom-post-types/partners.php:19
@@ -171,6 +171,48 @@ msgstr ""
 #: inc/custom-post-types/announcements.php:24
 msgid "announcements"
 msgstr ""
+
+#: inc/custom-post-types/camp-themes.php:7
+#: inc/custom-post-types/camp-themes.php:9
+msgid "Camp themes"
+msgstr "មូលបទ"
+
+#: inc/custom-post-types/camp-themes.php:8
+msgid "Camp theme"
+msgstr ""
+
+#: inc/custom-post-types/camp-themes.php:10
+msgid "Parent Camp theme"
+msgstr ""
+
+#: inc/custom-post-types/camp-themes.php:11
+msgid "All Camp themes"
+msgstr ""
+
+#: inc/custom-post-types/camp-themes.php:12
+msgid "View Camp theme"
+msgstr ""
+
+#: inc/custom-post-types/camp-themes.php:13
+msgid "Add New Camp theme"
+msgstr ""
+
+#: inc/custom-post-types/camp-themes.php:15
+msgid "Edit Camp theme"
+msgstr ""
+
+#: inc/custom-post-types/camp-themes.php:16
+msgid "Update Camp theme"
+msgstr ""
+
+#: inc/custom-post-types/camp-themes.php:17
+msgid "Search Camp theme"
+msgstr ""
+
+#: inc/custom-post-types/camp-themes.php:23
+#: inc/custom-post-types/camp-themes.php:24
+msgid "camp announcements"
+msgstr "សេចក្តីប្រកាស"
 
 #: inc/custom-post-types/donors.php:7 inc/custom-post-types/donors.php:9
 msgid "Donors"
