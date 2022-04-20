@@ -91,11 +91,12 @@ if (
             <div class="tab-content">
                 <?php
                 $args = [
-                    'post_type'    => 'sessions',
-                    'tax_query'    => [
-                        'taxonomy' => $taxonomy,
-                        'field'    => 'term_id',
-                        'terms'    => $day->term_id
+                    'post_type'         => 'sessions',
+                    'posts_per_page'    => -1,
+                    'tax_query'         => [
+                        'taxonomy'      => $taxonomy,
+                        'field'         => 'term_id',
+                        'terms'         => $day->term_id
                     ]
                 ];
 
