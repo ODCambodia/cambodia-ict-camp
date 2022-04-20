@@ -41,10 +41,11 @@ if (
             $camp_year = $page_camp_year[0]->name;
 
             $args = [
-                'post_type' => 'speakers',
-                'orderby'   => 'post_name',
-                'order'     => 'ASC',
-                'camp_year' => $camp_year,
+                'post_type'         => 'speakers',
+                'posts_per_page'    => -1,
+                'orderby'           => 'post_name',
+                'order'             => 'ASC',
+                'camp_year'         => '2018'
             ];
 
             $speakers = new WP_Query($args);
@@ -56,6 +57,7 @@ if (
                         <?php
                         $counter = 1;
                         $wrap_count = 6;
+
                         while ($speakers->have_posts()) {
                             $speakers->the_post();
 

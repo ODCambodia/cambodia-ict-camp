@@ -48,21 +48,21 @@ if(
             if ( ! empty( $presentation_terms ) && ! is_wp_error( $presentation_terms ) ) {
                 $page_camp_year = get_the_terms( $post->ID, 'camp_year' );
                 $camp_year = $page_camp_year[0]->name;
-                var_dump($camp_year);
 
                 foreach ( $presentation_terms as $presentation_term ) {
                     wp_reset_query();
 
                     $args = [
-                        'post_type' => 'presentations',
-                        'orderby'   => 'post_name',
-                        'order'     => 'ASC',
-                        'camp_year' => $camp_year,
-                        'tax_query' => [
+                        'post_type'         => 'presentations',
+                        'posts_per_page'    => -1,
+                        'orderby'           => 'post_name',
+                        'order'             => 'ASC',
+                        'camp_year'         => $camp_year,
+                        'tax_query'         => [
                             [
-                                'taxonomy' => 'category',
-                                'field'    => 'slug',
-                                'terms'    => $presentation_term->slug,
+                                'taxonomy'  => 'category',
+                                'field'     => 'slug',
+                                'terms'     => $presentation_term->slug,
                             ]
                         ]
                     ];

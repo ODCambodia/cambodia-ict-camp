@@ -49,20 +49,20 @@ if (
                 $page_camp_year = get_the_terms($post->ID, 'camp_year');
                 $camp_year = $page_camp_year[0]->name;
 
-                // echo '<div class="section padding-top-1-em">';
                 foreach ($facilitator_terms as $facilitator_term) {
                     wp_reset_query();
 
                     $args = [
-                        'post_type' => 'facilitators',
-                        'orderby'   => 'post_name',
-                        'order'     => 'ASC',
-                        'camp_year' => $camp_year,
-                        'tax_query' => [
+                        'post_type'         => 'facilitators',
+                        'posts_per_page'    => -1,
+                        'orderby'           => 'post_name',
+                        'order'             => 'ASC',
+                        'camp_year'         => $camp_year,
+                        'tax_query'         => [
                             [
-                                'taxonomy' => 'facilitator_group',
-                                'field'    => 'slug',
-                                'terms'    => $facilitator_term->slug,
+                                'taxonomy'  => 'facilitator_group',
+                                'field'     => 'slug',
+                                'terms'     => $facilitator_term->slug,
                             ]
                         ]
                     ];
@@ -70,7 +70,7 @@ if (
                     $facilitator_group = new WP_Query($args);
 
                     if ($facilitator_group->have_posts()) {
-            ?>
+                    ?>
                         <div class="section padding-top-1-em" id="<?php echo $facilitator_term->slug; ?>">
                             <div class="section-title">
                                 <h2 class="text-center"><?php _e($facilitator_term->name); ?></h2>
@@ -97,7 +97,7 @@ if (
                                 ?>
                             </div>
                         </div>
-            <?php
+                    <?php
                     }
                 }
             } else {
