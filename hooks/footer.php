@@ -122,7 +122,7 @@ if ( ! function_exists( 'event_star_footer' ) ) {
                         </div>
                     </div>
                 </div>
-                <a href="#page" class="sm-up-container"><i class="fa fa-angle-up sm-up"></i></a>
+                <a href="#page" class="sm-up-container"><i class="fa fa-angle-up sm-up d-none d-sm-block"></i></a>
             </div>
         </footer>
     <?php
