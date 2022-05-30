@@ -45,7 +45,7 @@ if (
                 'posts_per_page'    => -1,
                 'orderby'           => 'post_name',
                 'order'             => 'ASC',
-                'camp_year'         => '2018'
+                'camp_year'         => $camp_year
             ];
 
             $speakers = new WP_Query($args);
