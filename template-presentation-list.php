@@ -102,7 +102,7 @@ if(
                                         'content-list-1-col',
                                         array(
                                             'post'                         => get_post(),
-                                            'show_meta'                    => true,
+                                            'show_meta'                    => false,
                                             'show_order_number'            => $order_number,
                                             'show_excerpt'                 => false,
                                             'custom_link'                  => $source_link,
