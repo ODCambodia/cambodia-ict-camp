@@ -49,7 +49,7 @@ function echo_ictcamp_post_meta( $the_post, $show_elements = array( 'date', 'cat
                             continue;
                         }
 
-                        //We successfully got a link. Print it out.
+                        // We successfully got a link. Print it out.
                         $news_sources .= '<a href="' . $term_link . '">' . $term->name . '</a>, ';
                         if ( isset($news_sources ) ):
                             $post_meta .= '<li class="news-source">';

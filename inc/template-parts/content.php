@@ -41,12 +41,17 @@ $no_blog_image = '';
             <footer class="entry-footer">
                 <?php
                 $tags = '';
+                $sources = '';
 
                 if ( ! is_tag() ) {
                     $tags = 'tags';
                 }
 
-                echo_ictcamp_post_meta( get_post(), ['date', $tags] );
+                if ( get_post_type() === 'news') {
+                    $sources = 'sources';
+                }
+
+                echo_ictcamp_post_meta( get_post(), ['date', $tags, $sources] );
                 ?>
             </footer><!-- .entry-footer -->
             <?php

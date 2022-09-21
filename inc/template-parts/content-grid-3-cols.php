@@ -63,7 +63,7 @@ $no_blog_image         = '';
                 if ( $show_meta ) {
                 ?>
                     <div class="posts-meta-div">
-                        <?php echo_ictcamp_post_meta( get_post(), array( 'date', 'tags' ) ); ?>
+                        <?php echo_ictcamp_post_meta( get_post(), array( 'date', 'tags', 'sources' ) ); ?>
                     </div>
                 <?php
                 }

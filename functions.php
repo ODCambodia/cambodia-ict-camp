@@ -78,6 +78,7 @@ require_once(__DIR__ . '/hooks/slider-selection.php');
 
 // Register Custom Taxonomies
 require_once(__DIR__ . '/inc/custom-taxonomies/facilitator-groups.php');
+require_once(__DIR__ . '/inc/custom-taxonomies/news-sources.php');
 require_once(__DIR__ . '/inc/custom-taxonomies/session-types.php');
 require_once(__DIR__ . '/inc/custom-taxonomies/years.php');
 
@@ -86,10 +87,11 @@ require_once(__DIR__ . '/inc/custom-post-types/announcements.php');
 require_once(__DIR__ . '/inc/custom-post-types/camp-themes.php');
 require_once(__DIR__ . '/inc/custom-post-types/donors.php');
 require_once(__DIR__ . '/inc/custom-post-types/facilitators.php');
+require_once(__DIR__ . '/inc/custom-post-types/news.php');
 require_once(__DIR__ . '/inc/custom-post-types/organizers.php');
 require_once(__DIR__ . '/inc/custom-post-types/partners.php');
-require_once(__DIR__ . '/inc/custom-post-types/sessions.php');
 require_once(__DIR__ . '/inc/custom-post-types/presentations.php');
+require_once(__DIR__ . '/inc/custom-post-types/sessions.php');
 require_once(__DIR__ . '/inc/custom-post-types/speakers.php');
 
 // Register Custom Meta Boxes for Facilitator post type

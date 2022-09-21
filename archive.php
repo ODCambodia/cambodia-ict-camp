@@ -25,7 +25,7 @@ global $event_star_customizer_all_values;
 
             <?php
 
-            the_archive_description('<div class="taxonomy-description">', '</div>');
+            // the_archive_description('<div class="taxonomy-description">', '</div>');
 
             if (1 == $event_star_customizer_all_values['event-star-show-breadcrumb']) {
                 event_star_breadcrumbs();
