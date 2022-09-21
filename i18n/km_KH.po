@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: cambodia-ict-camp\n"
-"POT-Creation-Date: 2022-04-11 14:46+0700\n"
-"PO-Revision-Date: 2022-04-11 15:32+0700\n"
+"POT-Creation-Date: 2022-09-21 17:45+0700\n"
+"PO-Revision-Date: 2022-09-21 17:46+0700\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: km_KH\n"
@@ -10,7 +10,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Poedit 3.0.1\n"
+"X-Generator: Poedit 3.1.1\n"
 "X-Poedit-Basepath: ..\n"
 "X-Poedit-SourceCharset: UTF-8\n"
 "X-Poedit-KeywordsList: _;_e;__;_x;esc_html__;esc_html_e\n"
@@ -49,39 +49,39 @@ msgstr "ត្រលប់ក្រោយ"
 msgid "Next"
 msgstr "បន្ទាប់"
 
-#: hooks/slider-selection.php:34
+#: hooks/slider-selection.php:35
 msgid "Event Star"
 msgstr ""
 
-#: hooks/slider-selection.php:37
+#: hooks/slider-selection.php:38
 msgid "The modern Event WordPress Theme"
 msgstr ""
 
-#: hooks/slider-selection.php:197
+#: hooks/slider-selection.php:205
 msgid "The First Day of Cambodia ICT Camp is opening now."
 msgstr "ថ្ងៃទី ១ នៃកម្មវិធីកម្ពុជាអាយស៊ីធីខែមកំពុងដំណើរការ"
 
-#: hooks/slider-selection.php:202
+#: hooks/slider-selection.php:210
 msgid "The Second Day of Cambodia ICT Camp is ongoing."
 msgstr "ថ្ងៃទី ២ នៃកម្មវិធីកម្ពុជាអាយស៊ីធីខែមកំពុងដំណើរការ"
 
-#: hooks/slider-selection.php:207
+#: hooks/slider-selection.php:215
 msgid "The Third Day of Cambodia ICT Camp is ongoing."
 msgstr "ថ្ងៃទី ៣ នៃកម្មវិធីកម្ពុជាអាយស៊ីធីខែមកំពុងដំណើរការ"
 
-#: hooks/slider-selection.php:212
+#: hooks/slider-selection.php:220
 msgid "The Fourth Day of Cambodia ICT Camp is ongoing."
 msgstr "ថ្ងៃទី ៤ នៃកម្មវិធីកម្ពុជាអាយស៊ីធីខែមកំពុងដំណើរការ"
 
-#: hooks/slider-selection.php:217
+#: hooks/slider-selection.php:225
 msgid "The last day of Cambodia ICT Camp is ongoing."
 msgstr "ថ្ងៃចុងក្រោយនៃកម្មវិធីកម្ពុជាអាយស៊ីធីខែមកំពុងដំណើរការ"
 
-#: hooks/slider-selection.php:222
+#: hooks/slider-selection.php:230
 msgid "The Cambodia ICT Camp was ended."
 msgstr "កម្មវិធីកម្ពុជាអាយស៊ីធីខែមបានបញ្ចប់ជាស្ថាពរ"
 
-#: inc/custom-meta-boxes/custom-link.php:7
+#: inc/custom-meta-boxes/custom-link.php:15
 msgid "Custom link to"
 msgstr ""
 
@@ -127,7 +127,7 @@ msgstr ""
 
 #: inc/custom-post-types/announcements.php:14
 #: inc/custom-post-types/camp-themes.php:14 inc/custom-post-types/donors.php:14
-#: inc/custom-post-types/facilitators.php:14
+#: inc/custom-post-types/facilitators.php:14 inc/custom-post-types/news.php:14
 #: inc/custom-post-types/organizers.php:14
 #: inc/custom-post-types/partners.php:14
 #: inc/custom-post-types/presentations.php:14
@@ -149,7 +149,7 @@ msgstr ""
 
 #: inc/custom-post-types/announcements.php:18
 #: inc/custom-post-types/camp-themes.php:18 inc/custom-post-types/donors.php:18
-#: inc/custom-post-types/facilitators.php:18
+#: inc/custom-post-types/facilitators.php:18 inc/custom-post-types/news.php:18
 #: inc/custom-post-types/organizers.php:18
 #: inc/custom-post-types/partners.php:18
 #: inc/custom-post-types/presentations.php:18
@@ -159,7 +159,7 @@ msgstr "ព័ត៌មានពុំអាចរកបាន"
 
 #: inc/custom-post-types/announcements.php:19
 #: inc/custom-post-types/camp-themes.php:19 inc/custom-post-types/donors.php:19
-#: inc/custom-post-types/facilitators.php:19
+#: inc/custom-post-types/facilitators.php:19 inc/custom-post-types/news.php:19
 #: inc/custom-post-types/organizers.php:19
 #: inc/custom-post-types/partners.php:19
 #: inc/custom-post-types/presentations.php:19
@@ -292,6 +292,43 @@ msgstr ""
 #: inc/custom-post-types/facilitators.php:17
 msgid "Search Facilitator"
 msgstr "ស្វែងរកអ្នកសម្របសម្រួល"
+
+#: inc/custom-post-types/news.php:7 inc/custom-post-types/news.php:8
+msgid "Related News"
+msgstr "ព័ត៌មាន"
+
+#: inc/custom-post-types/news.php:9 inc/custom-post-types/news.php:23
+#: inc/custom-post-types/news.php:24
+msgid "News"
+msgstr "ព័ត៌មាន"
+
+#: inc/custom-post-types/news.php:10
+msgid "Parent News"
+msgstr ""
+
+#: inc/custom-post-types/news.php:11
+msgid "All News"
+msgstr "ព័ត៌មានទាំងអស់"
+
+#: inc/custom-post-types/news.php:12
+msgid "View News"
+msgstr ""
+
+#: inc/custom-post-types/news.php:13
+msgid "Add New News"
+msgstr ""
+
+#: inc/custom-post-types/news.php:15
+msgid "Edit News"
+msgstr ""
+
+#: inc/custom-post-types/news.php:16
+msgid "Update News"
+msgstr ""
+
+#: inc/custom-post-types/news.php:17
+msgid "Search News"
+msgstr "ស្វែងរកព័ត៌មាន"
 
 #: inc/custom-post-types/organizers.php:7
 #: inc/custom-post-types/organizers.php:9
@@ -530,6 +567,47 @@ msgstr ""
 msgid "New Group Name"
 msgstr ""
 
+#: inc/custom-taxonomies/news-sources.php:7
+#: inc/custom-taxonomies/news-sources.php:17
+msgid "News Sources"
+msgstr ""
+
+#: inc/custom-taxonomies/news-sources.php:8
+msgid "News Source"
+msgstr ""
+
+#: inc/custom-taxonomies/news-sources.php:9
+msgid "Search News Sources"
+msgstr ""
+
+#: inc/custom-taxonomies/news-sources.php:10
+msgid "All News Sources"
+msgstr ""
+
+#: inc/custom-taxonomies/news-sources.php:11
+msgid "Parent News Source"
+msgstr ""
+
+#: inc/custom-taxonomies/news-sources.php:12
+msgid "Parent News Source:"
+msgstr ""
+
+#: inc/custom-taxonomies/news-sources.php:13
+msgid "Edit News Source"
+msgstr ""
+
+#: inc/custom-taxonomies/news-sources.php:14
+msgid "Update News Source"
+msgstr ""
+
+#: inc/custom-taxonomies/news-sources.php:15
+msgid "Add News Source"
+msgstr ""
+
+#: inc/custom-taxonomies/news-sources.php:16
+msgid "New News Source"
+msgstr ""
+
 #: inc/custom-taxonomies/session-types.php:7
 #: inc/custom-taxonomies/session-types.php:17
 msgid "Types"
@@ -631,17 +709,17 @@ msgstr ""
 msgid "Select a image for the theme."
 msgstr ""
 
-#: inc/template-parts/content-grid-3-cols.php:77
+#: inc/template-parts/content-grid-3-cols.php:81
 #: inc/template-parts/content-single-post.php:35
-#: inc/template-parts/content.php:56
+#: inc/template-parts/content.php:61
 #, php-format
 msgid "Continue reading %s <span class=\"meta-nav\">&rarr;</span>"
 msgstr ""
 
-#: inc/template-parts/content-grid-3-cols.php:82
+#: inc/template-parts/content-grid-3-cols.php:86
 #: inc/template-parts/content-page.php:17
 #: inc/template-parts/content-single-post.php:39
-#: inc/template-parts/content.php:60
+#: inc/template-parts/content.php:65
 msgid "Pages:"
 msgstr ""
 
