@@ -16,6 +16,10 @@ $show_thumbnail        = isset( $params['show_thumbnail'] ) ? $params['show_thum
 $thumbnail_size        = isset( $params['thumbnail_size'] ) ? $params['thumbnail_size'] : 'full';
 
 $no_blog_image         = '';
+
+if ($custom_link) {
+    $custom_link = get_post_meta(get_the_ID(), '_custom_link_value_key', true);
+}
 ?>
 
 <div class="col-sm-4">
@@ -51,7 +55,7 @@ $no_blog_image         = '';
                         the_title( sprintf( '<h4 class="entry-title"><a class="txtcolor-dgreen" href="%s" rel="bookmark">', esc_url( $link ) ), '</a></h4>' );
                     } else {
                         if ( $custom_link ) {
-                            the_title( sprintf( '<h4 class="entry-title"><a class="txtcolor-dgreen" href="%s" rel="bookmark">', esc_url( $custom_link ) ), '</a></h4>' );
+                            the_title( sprintf( '<h4 class="entry-title"><a class="txtcolor-dgreen" target="_blank" href="%s" rel="bookmark">', esc_url( $custom_link ) ), '</a></h4>' );
                         } else {
                             the_title( sprintf( '<h4 class="entry-title">', esc_url( $custom_link ) ), '</h4>' );
                         }

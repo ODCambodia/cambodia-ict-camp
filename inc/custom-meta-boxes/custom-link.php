@@ -4,7 +4,15 @@ add_action( 'save_post', 'save_custom_link_data' );
 
 function create_custom_link_meta_box()
 {
-	add_meta_box( 'custom_link', __( 'Custom link to' ), 'add_custom_link_callback', array('presentations', 'organizers', 'partners', 'donors'), 'advanced' );
+	$postTypes = [
+		'presentations',
+		'organizers',
+		'partners',
+		'donors',
+		'news',
+	];
+
+	add_meta_box( 'custom_link', __( 'Custom link to' ), 'add_custom_link_callback', $postTypes, 'advanced' );
 }
 
 function add_custom_link_callback( $post )

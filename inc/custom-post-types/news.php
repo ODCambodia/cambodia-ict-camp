@@ -4,8 +4,8 @@ add_action( 'init', 'create_news_custom_post_type' );
 function create_news_custom_post_type() 
 {
     $labels = [
-        'name'                => _x( 'News', 'Post Type General Name', 'ict_camp' ),
-        'singular_name'       => _x( 'News', 'Post Type Singular Name', 'ict_camp' ),
+        'name'                => _x( 'Related News', 'Post Type General Name', 'ict_camp' ),
+        'singular_name'       => _x( 'Related News', 'Post Type Singular Name', 'ict_camp' ),
         'menu_name'           => __( 'News', 'ict_camp' ),
         'parent_item_colon'   => __( 'Parent News', 'ict_camp' ),
         'all_items'           => __( 'All News', 'ict_camp' ),
