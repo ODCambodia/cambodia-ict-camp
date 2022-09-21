@@ -9,7 +9,7 @@ global $event_star_customizer_all_values;
         <header class="entry-header init-animate">
             <?php $title = post_type_archive_title('', false); ?>
 
-            <h1 class="page-title"><?php _e($title); ?></h1>
+            <h1 class="page-title"><?php _e($title, 'ict_camp'); ?></h1>
 
             <?php
             if (1 == $event_star_customizer_all_values['event-star-show-breadcrumb']) {
