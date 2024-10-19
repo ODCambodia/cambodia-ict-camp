@@ -408,6 +408,10 @@ small {
   background: rgba(12, 12, 12, 0.3);
   padding: 10px;
 }
+
+.image-slider-wrapper .slider-content .btn {
+  top: 2rem;
+}
 /* END Homepage Slider */
 
 /* Jquery UI Accordion */
