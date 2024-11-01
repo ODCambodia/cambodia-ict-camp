@@ -19,11 +19,11 @@
 }
 
 body:lang(km) h1, body:lang(km) h2, body:lang(km) h3, body:lang(km) h4, body:lang(km) h5, body:lang(km) h6 {
-  font-family: 'Siemreap', serif;
+  font-family: 'Siemreap', 'Roboto', sans-serif;
 }
 
 body:lang(km) p, body:lang(km) a, body:lang(km) b, body:lang(km) strong, body:lang(km) ul, body:lang(km) li, body:lang(km) td, body:lang(km) th, body:lang(km) div, body:lang(km) input, body:lang(km) text, body:lang(km) span, body:lang(km) select, body:lang(km) small {
-  font-family: 'Siemreap', cursive;
+  font-family: 'Siemreap', 'Roboto', sans-serif;
   line-height: 1.9em;
 }
 
