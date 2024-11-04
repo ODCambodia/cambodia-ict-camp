@@ -237,7 +237,7 @@ if (!function_exists('event_star_feature_slider')) :
 
                                         if (!empty($slides_single_data['button-1-text'])) {
                                         ?>
-                                            <a href="<?php echo esc_url($slides_single_data['button-1-link']); ?>" class="<?php echo esc_attr($animation4); ?> btn btn-primary btn-reverse outline-outward banner-btn">
+                                            <a target="_blank" href="<?php echo esc_url($slides_single_data['button-1-link']); ?>" class="<?php echo esc_attr($animation4); ?> btn btn-primary btn-reverse outline-outward banner-btn">
                                                 <?php echo esc_html($slides_single_data['button-1-text']); ?>
                                             </a>
                                         <?php
@@ -245,7 +245,7 @@ if (!function_exists('event_star_feature_slider')) :
 
                                         if (!empty($slides_single_data['button-2-text'])) {
                                         ?>
-                                            <a href="<?php echo esc_url($slides_single_data['button-2-link']); ?>" class="<?php echo esc_attr($animation5); ?> btn btn-secondary outline-outward banner-btn">
+                                            <a target="_blank" href="<?php echo esc_url($slides_single_data['button-2-link']); ?>" class="<?php echo esc_attr($animation5); ?> btn btn-secondary outline-outward banner-btn">
                                                 <?php echo esc_html($slides_single_data['button-2-text']); ?>
                                             </a>
                                         <?php
