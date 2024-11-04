@@ -117,7 +117,7 @@ small {
 .btn-secondary {
   background-color: rgba(255, 97, 18, 0.9);
   border: 1px solid #fff;
-  color: rgba(255, 97, 18, 0.9);
+  color: #fff !important;
 }
 
 .btn-secondary:hover {
