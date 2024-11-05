@@ -130,7 +130,6 @@
 
 body:lang(en) h1, body:lang(en) h2, body:lang(en) h3, body:lang(en) h4, body:lang(en) h5, body:lang(en) h6 {
   font-family: 'DM Serif Display', serif;
-  font-weight: 400;
 }
 
 body:lang(en) p, body:lang(en) a, body:lang(en) b, body:lang(en) strong, body:lang(en) ul, body:lang(en) li, body:lang(en) td, body:lang(en) th, body:lang(en) div, body:lang(en) input, body:lang(en) text, body:lang(en) span, body:lang(en) select, body:lang(en) small {
@@ -282,6 +281,10 @@ small {
 
 .inner-main-title {
   background-color: #06323d;
+}
+
+body:lang(km) .inner-main-title {
+  font-weight: 400;
 }
 
 .recent-feature-image {

@@ -40,14 +40,6 @@ function cambodia_ict_camp_admin_scripts()
 }
 add_action('admin_enqueue_scripts', 'cambodia_ict_camp_admin_scripts');
 
-// Add Google Font
-add_action('wp_enqueue_scripts', 'add_google_fonts');
-
-function add_google_fonts()
-{
-    wp_enqueue_style('google-font-english', 'https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Siemreap&display=swap', false);
-}
-
 // Load Theme's Translated Link
 add_action('after_setup_theme', 'ictcamp_theme_setup');
 function ictcamp_theme_setup()
