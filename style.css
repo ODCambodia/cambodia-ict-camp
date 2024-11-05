@@ -130,6 +130,7 @@
 
 body:lang(en) h1, body:lang(en) h2, body:lang(en) h3, body:lang(en) h4, body:lang(en) h5, body:lang(en) h6 {
   font-family: 'DM Serif Display', serif;
+  font-weight: 400;
 }
 
 body:lang(en) p, body:lang(en) a, body:lang(en) b, body:lang(en) strong, body:lang(en) ul, body:lang(en) li, body:lang(en) td, body:lang(en) th, body:lang(en) div, body:lang(en) input, body:lang(en) text, body:lang(en) span, body:lang(en) select, body:lang(en) small {
@@ -139,6 +140,7 @@ body:lang(en) p, body:lang(en) a, body:lang(en) b, body:lang(en) strong, body:la
 
 body:lang(km) h1, body:lang(km) h2, body:lang(km) h3, body:lang(km) h4, body:lang(km) h5, body:lang(km) h6 {
   font-family: 'Khmer OS Kangrey', 'DM Serif Display', serif;
+  font-weight: 400
 }
 
 body:lang(km) p, body:lang(km) a, body:lang(km) b, body:lang(km) strong, body:lang(km) ul, body:lang(km) li, body:lang(km) td, body:lang(km) th, body:lang(km) div, body:lang(km) input, body:lang(km) text, body:lang(km) span, body:lang(km) select, body:lang(km) small {
