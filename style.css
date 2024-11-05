@@ -12,18 +12,53 @@
   Text Domain:  cambodia-ict-camp
  */
 
-/* General */
+/* Font Face */
+@font-face {
+  font-family: 'Khmer OS Kangrey';
+  src: url(./assets/fonts/Khmer+OS+Kangrey.woff) format('woff');
+}
+
+@font-face {
+  font-family: 'Hanuman';
+  src: url(./assets/fonts/Hanuman-Regular.woff2) format('woff2');
+}
+
+@font-face {
+  font-family: 'DM Serif Display';
+  src: url(./assets/fonts/DMSerifDisplay-Regular.woff2) format('woff2');
+}
+
+@font-face {
+  font-family: 'DMSans';
+  src: url(./assets/fonts/DMSans-Italic.woff) format('woff');
+}
+
+@font-face {
+  font-family: 'DM Sans';
+  src: url(./assets/fonts/DMSans.woff) format('woff');
+}
+
+ /* General */
 .entry-content ul,
 .entry-content ol {
   margin: 0 0 1.5em 0 !important;
 }
 
+body:lang(en) h1, body:lang(en) h2, body:lang(en) h3, body:lang(en) h4, body:lang(en) h5, body:lang(en) h6 {
+  font-family: 'DM Serif Display', serif;
+}
+
+body:lang(en) p, body:lang(en) a, body:lang(en) b, body:lang(en) strong, body:lang(en) ul, body:lang(en) li, body:lang(en) td, body:lang(en) th, body:lang(en) div, body:lang(en) input, body:lang(en) text, body:lang(en) span, body:lang(en) select, body:lang(en) small {
+  font-family: 'DM Sans', sans-serif;
+  line-height: 1.9em;
+}
+
 body:lang(km) h1, body:lang(km) h2, body:lang(km) h3, body:lang(km) h4, body:lang(km) h5, body:lang(km) h6 {
-  font-family: 'Siemreap', 'Roboto', sans-serif;
+  font-family: 'Khmer OS Kangrey', 'DM Serif Display', serif;
 }
 
 body:lang(km) p, body:lang(km) a, body:lang(km) b, body:lang(km) strong, body:lang(km) ul, body:lang(km) li, body:lang(km) td, body:lang(km) th, body:lang(km) div, body:lang(km) input, body:lang(km) text, body:lang(km) span, body:lang(km) select, body:lang(km) small {
-  font-family: 'Siemreap', 'Roboto', sans-serif;
+  font-family: 'Hanuman', 'DM Sans', sans-serif;
   line-height: 1.9em;
 }
 
