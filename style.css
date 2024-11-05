@@ -283,8 +283,15 @@ small {
   background-color: #06323d;
 }
 
-body:lang(km) .inner-main-title .entry-title,
-body:lang(km) .inner-main-title .page-title {
+.entry-title,
+.page-title {
+  font-family: 'DM Serif Display', serif;
+  font-weight: 700;
+}
+
+body:lang(km) .entry-title,
+body:lang(km) .page-title {
+  font-family: 'Khmer OS Kangrey', 'DM Serif Display', serif;
   font-weight: 400;
 }
 
