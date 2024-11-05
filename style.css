@@ -283,7 +283,8 @@ small {
   background-color: #06323d;
 }
 
-body:lang(km) .inner-main-title {
+body:lang(km) .inner-main-title .entry-title,
+body:lang(km) .inner-main-title .page-title {
   font-weight: 400;
 }
 
