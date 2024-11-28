@@ -6,7 +6,11 @@
 
 get_header();
 
-$sheet_url = get_post_field('camp_programme_google_sheet');
+$sheet_url = get_post_field('camp_programme_google_sheet_english');
+
+if ('en_US' !== get_locale()) {
+    $sheet_url = get_post_field('camp_programme_google_sheet_khmer');
+}
 $file = file_get_contents($sheet_url);
 
 global $event_star_customizer_all_values;
