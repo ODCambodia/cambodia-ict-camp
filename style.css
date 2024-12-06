@@ -734,6 +734,10 @@ canvas {
   .recent-feature-image {
     height: 200px;
   }
+
+  .img-responsive {
+    max-width: 60%;
+  }
 }
 
 /* Medium Device: Tablet */
