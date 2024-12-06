@@ -723,6 +723,10 @@ canvas {
   .recent-feature-image {
     height: 150px;
   }
+
+  .img-responsive {
+    max-width: 60% !important;
+  }
 }
 
 /* Small Devices: Mobile Phone */
@@ -733,10 +737,6 @@ canvas {
 
   .recent-feature-image {
     height: 200px;
-  }
-
-  .img-responsive {
-    max-width: 60% !important;
   }
 }
 
