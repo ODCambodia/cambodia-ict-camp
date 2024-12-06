@@ -736,7 +736,7 @@ canvas {
   }
 
   .img-responsive {
-    max-width: 60%;
+    max-width: 60% !important;
   }
 }
 
