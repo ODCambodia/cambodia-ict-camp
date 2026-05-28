@@ -150,7 +150,7 @@ if (!function_exists('event_star_feature_slider')) :
                             }
 
                             if ('full-screen-bg' == $event_star_fs_image_display_options) {
-                                $bg_image_style = 'background-image:url(' . esc_url($featuredImageUrl) . ');background-repeat:no-repeat;background-size:cover;background-position:center;';
+                                $bg_image_style = 'background-image:linear-gradient(rgba(6, 50, 61, 0.8) 100%),url(' . esc_url($featuredImageUrl) . ');background-repeat:no-repeat;background-size:cover;background-position:center;';
                             }
 
                             $slides_single_data = $slides_other_data[get_the_ID()];
