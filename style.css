@@ -504,6 +504,8 @@ DECORATIVE & UTILITY CLASSES
 
 .inner-main-title {
   background-color: #06323d;
+  height: 8em;
+  text-shadow: 0px 0px 10px #93c63d;
 }
 
 /* .entry-title,
@@ -613,6 +615,7 @@ DECORATIVE & UTILITY CLASSES
 }
 
 .search-woo .featured-button {
+  box-shadow: 0px 0px 10px #93c63d;
   margin-top: 1.5em;
 }
 
