@@ -274,6 +274,7 @@ p {
 }
 
 a {
+  font-family: var(--font-body-primary) !important;
   font-size: inherit !important;
   line-height: inherit !important;
   color: #96c942 !important;
@@ -572,6 +573,7 @@ DECORATIVE & UTILITY CLASSES
 
 .sm-up-container {
   background-color: transparent;
+  text-decoration: none;
 }
 
 .sm-up-container:hover {
@@ -639,6 +641,7 @@ DECORATIVE & UTILITY CLASSES
 /* Pagination */
 .navigation.pagination .nav-links .page-numbers {
   color: #06323d !important;
+  text-decoration: none !important;
 }
 
 .navigation.pagination .nav-links .page-numbers:hover {
@@ -679,7 +682,7 @@ DECORATIVE & UTILITY CLASSES
 }
 
 .posts-meta-div {
-  font-size: 12px;
+  font-size: var(--fs-small) !important;
 }
 
 .post-meta ul {
@@ -752,7 +755,7 @@ DECORATIVE & UTILITY CLASSES
 .ui-accordion .ui-accordion-header {
   cursor: pointer;
   display: block;
-  font-size: 100%;
+  font-size: var(--fs-h5) !important;
   margin: 8px 0 0 0;
   padding: 1em;
   position: relative;
