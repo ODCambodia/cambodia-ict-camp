@@ -622,7 +622,7 @@ DECORATIVE & UTILITY CLASSES
 }
 
 .top-header a {
-  font-size: 1.7rem;
+  font-size: var(--fs-body) !important;
 }
 
 .top-header ul li a:hover {
@@ -630,7 +630,7 @@ DECORATIVE & UTILITY CLASSES
 }
 
 .top-header img.qtranxs-flag {
-  width: 2rem;
+  width: var(--fs-h4) !important;
 }
 
 .width-80-percent {
