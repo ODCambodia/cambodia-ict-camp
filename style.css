@@ -617,7 +617,7 @@ DECORATIVE & UTILITY CLASSES
 }
 
 .main-navigation #primary-menu {
-  margin-top: 1.5em;
+  margin-top: 1.5em !important;
 }
 
 .search-woo .featured-button {
