@@ -142,7 +142,16 @@ ksort($agenda_data);
                         }
                     ?>
                         <div role="tabpanel" class="tab-pane <?php echo $class_active; ?>" id="<?php echo sanitize_title($date); ?>">
-                            <h3><?php echo date('F j, Y', strtotime($date)); ?></h3>
+                            <?php
+                            if ( ictcamp_localize_manager()->get_current_language() == 'km' ) {
+                                $date = ictcamp_localize_manager()->khmer_date( $date );
+                            } else {
+                                $date = date('j F Y', strtotime($date));
+                            }
+                            ?>
+
+                            <h3><?php echo $date; ?></h3>
+
                             <hr/>
                             <div class="agenda-list">
                                 <?php
@@ -160,12 +169,16 @@ ksort($agenda_data);
                                                     <p style="margin-bottom: 0 !important;"><?php echo $session['location']; ?></p>
                                                 </div>
                                                 <div class="col-md-8">
-                                                    <span class="label label-primary" style="margin-bottom: 0 !important; font-size: 90% !important"><?php echo $session['track']; ?></span>
+                                                    <p class="label label-info" style="margin-bottom: 0 !important; font-size: 100% !important"><?php echo $session['track']; ?></p>
                                                     
                                                     <?php if ( !empty( $session['description'] ) ) : ?>
-                                                        <a href="<?php echo $session['permalink']; ?>" style="text-decoration: none; margin-bottom: 0 !important;"><strong><?php echo $session['title']; ?></strong></a>
+                                                        <h5><a href="<?php echo $session['permalink']; ?>" style="text-decoration: none; margin: 0 !important; font-family: var(--fs-heading-primary) !important;">
+                                                            <?php echo $session['title']; ?>
+                                                        </a></h5>
                                                     <?php else: ?>
-                                                        <p style="margin-bottom: 0 !important;"><strong><?php echo $session['title']; ?></strong></p>
+                                                        <h5 style="margin: 0 !important;">
+                                                            <?php echo $session['title']; ?>
+                                                        </h5>
                                                     <?php endif; ?>
 
                                                     <div><?php echo apply_filters( 'the_content', $session['speakers'] ); ?></div>

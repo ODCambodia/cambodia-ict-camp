@@ -907,6 +907,11 @@ canvas {
   margin-top: 0.5em !important;
 }
 
+/* Page: Agenda Session */
+div.wysiwyg-field * {
+  margin: 0 !important;
+}
+
 /* Extra Small Devices */
 @media only screen and (max-width: 576px) {
   .blog-feature-image {
