@@ -39,7 +39,7 @@ $camp_year = get_the_terms( get_the_ID(), 'camp_year' );
 
 $args = [
     'post_type'     => 'agenda-session',
-    'post_per_page' => -1,
+    'posts_per_page' => -1,
     'meta_key'     => 'start_time',
     'orderby'      => 'meta_value',
     'order'        => 'ASC',
@@ -120,7 +120,6 @@ ksort($agenda_data);
                     ?>
                         <li class="<?php echo $class_active; ?>" role="presentation">
                             <a href="<?php echo get_site_url() . '#' . sanitize_title($date); ?>" aria-controls="<?php echo sanitize_title($date); ?>" role="tab" data-toggle="tab" style="text-decoration: none !important; font-size: 2rem !important; font-weight: bold !important; font-family: var(--font-heading-primary) !important;">
-                                <?php // echo date('F j, Y', strtotime($date)); ?>
                                 <?php _e( 'Day ' . $counter );?>
                             </a>
                         </li>
@@ -161,35 +160,19 @@ ksort($agenda_data);
                                                     <p style="margin-bottom: 0 !important;"><?php echo $session['location']; ?></p>
                                                 </div>
                                                 <div class="col-md-8">
-                                                    <span class="label label-primary" style="margin-bottom: 0 !important;"><?php echo $session['track']; ?></span>
-                                                    <p style="margin-bottom: 0 !important;"><strong><?php echo $session['title']; ?></strong></p>
-                                                    <!-- <a href="<?php echo $session['permalink']; ?>" style="text-decoration: none; margin-bottom: 0 !important;"><strong><?php echo $session['title']; ?></strong></a> -->
+                                                    <span class="label label-primary" style="margin-bottom: 0 !important; font-size: 90% !important"><?php echo $session['track']; ?></span>
+                                                    
+                                                    <?php if ( !empty( $session['description'] ) ) : ?>
+                                                        <a href="<?php echo $session['permalink']; ?>" style="text-decoration: none; margin-bottom: 0 !important;"><strong><?php echo $session['title']; ?></strong></a>
+                                                    <?php else: ?>
+                                                        <p style="margin-bottom: 0 !important;"><strong><?php echo $session['title']; ?></strong></p>
+                                                    <?php endif; ?>
+
                                                     <div><?php echo apply_filters( 'the_content', $session['speakers'] ); ?></div>
                                                 </div>
                                             </div>
                                         </div>
                                         <hr/>
-
-                                            <!-- <h4><?php echo $session['title']; ?></h4>
-                                            <p><strong>Time:</strong> <?php echo $time; ?> - <?php echo $session['end_time']; ?></p>
-                                            <p><strong>Location:</strong> <?php echo $session['location']; ?></p>
-                                            <p><strong>Track:</strong> <?php echo $session['track']; ?></p>
-                                            <p><strong>Type:</strong> <?php echo $session['session_type']; ?></p>
-                                            <?php if (!empty($session['speakers'])) : ?>
-                                                <p><strong>Speakers:</strong>
-                                                    <?php
-                                                    $speaker_names = [];
-                                                    foreach ($session['speakers'] as $speaker) {
-                                                        $speaker_names[] = get_the_title($speaker->ID);
-                                                    }
-                                                    echo implode(', ', $speaker_names);
-                                                    ?>
-                                                </p>
-                                            <?php endif; ?>
-                                            <p><?php echo $session['description']; ?></p>
-                                    
-                                            <hr/>
-                                        </div> -->
                                 <?php
                                     }
                                 }
