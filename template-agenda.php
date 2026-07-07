@@ -40,21 +40,24 @@ $camp_year = get_the_terms( get_the_ID(), 'camp_year' );
 $args = [
     'post_type'     => 'agenda-session',
     'post_per_page' => -1,
-    'meta_query' => [
-        'relation' => 'AND',
-        'date_clause' => [
-            'key'     => 'session_date',
-            'compare' => 'EXISTS',
-        ],
-        'time_clause' => [
-            'key'     => 'start_time',
-            'compare' => 'EXISTS',
-        ],
-    ],
-    'orderby' => [
-        'date_clause' => 'ASC',
-        'time_clause'   => 'ASC',
-    ],
+    'meta_key'     => 'start_time',
+    'orderby'      => 'meta_value',
+    'order'        => 'ASC',
+    // 'meta_query' => [
+    //     'relation' => 'AND',
+    //     'date_clause' => [
+    //         'key'     => 'session_date',
+    //         'compare' => 'EXISTS',
+    //     ],
+    //     'time_clause' => [
+    //         'key'     => 'start_time',
+    //         'compare' => 'EXISTS',
+    //     ],
+    // ],
+    // 'orderby' => [
+    //     'date_clause' => 'ASC',
+    //     'time_clause'   => 'ASC',
+    // ],
     'tax_query'    => [
         [
             'taxonomy' => 'camp_year',
