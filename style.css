@@ -269,7 +269,7 @@ h6 {
 }
 
 p {
-  margin-bottom: 1.25em !important;
+  margin-bottom: 1em !important;
   font-weight: var(--fw-normal) !important;
 }
 
@@ -293,6 +293,10 @@ a:hover{
 small {
   font-size: var(--fs-small) !important;
   line-height: var(--lh-small) !important;
+}
+
+ul, ol {
+  margin: 0 !important;
 }
 
 /* ==========================================================================
