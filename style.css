@@ -177,8 +177,8 @@ LANGLUAGE TOKENS & VARIABLES
 /* Khmer Profile */
 :lang(km) {
   /* Font Family */
-  --font-heading-primary: 'Khmer OS Kangrey', 'DM Serif Display', serif;
-  --font-body-primary: 'Hanuman', 'DM Sans', sans-serif;
+  --font-heading-primary: 'DM Serif Display', 'Khmer OS Kangrey', serif;
+  --font-body-primary: 'DM Sans', 'Hanuman', sans-serif;
 
   /* Font Sizes (Base 16px +2px scaling rule implemented via rem) */
   --fs-h1: 2.8130rem;       /* 45px */
