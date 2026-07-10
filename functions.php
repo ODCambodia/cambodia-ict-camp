@@ -9,6 +9,10 @@ function cambodia_ict_camp_parent_child_theme_scripts()
     wp_enqueue_style('font-awesome', get_template_directory_uri() . '/assets/library/Font-Awesome/css/font-awesome.min.css', array(), '4.7.0');
     wp_enqueue_style('slick', get_template_directory_uri() . '/assets/library/slick/slick.css', array(), '1.3.3');
     wp_enqueue_style('magnific-popup', get_template_directory_uri() . '/assets/library/magnific-popup/magnific-popup.css', array(), '1.1.0');
+    
+    // Enqueue AOS CSS
+    wp_enqueue_style('aos-css', 'https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css', array(), '2.3.4');
+    
     wp_enqueue_style($parenthandle, get_template_directory_uri() . '/style.css', array(), $theme->parent()->get('Version'));
     wp_enqueue_style('cambodia-ict-camp-style', get_stylesheet_uri(), array($parenthandle), $theme->get('Version'));
     wp_dequeue_style('cambodia-ict-camp-style');
@@ -22,6 +26,9 @@ function cambodia_ict_camp_theme_scripts()
 
     wp_enqueue_script('particles-js', get_stylesheet_directory_uri() . '/node_modules/particles.js/particles.js', array(), '2.0.0', true);
     wp_enqueue_script('particles-js-config', get_stylesheet_directory_uri() . '/assets/js/particles-config.js', array(), '', true);
+
+    // Enqueue AOS JS (loaded in footer)
+    wp_enqueue_script('aos-js', 'https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js', array(), '2.3.4', true);
 
     if (is_page_template('template-accordion.php')) {
         wp_enqueue_script('jquery-ui-accordion');

@@ -307,7 +307,7 @@ COMPONENT APPLICATION (automating the flexible layout)
 .button,
 .btn
 .input-field {
-  diplay: inline-flex;
+  display: inline-flex;
   align-items: center;
   font-family: inherit;
   font-size: 1rem;

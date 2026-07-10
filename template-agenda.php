@@ -20,7 +20,7 @@ if (
         <div class="container">
             <header class="entry-header init-animate">
                 <?php
-                the_title('<h1 class="entry-title">', '</h1>');
+                the_title('<h1 class="entry-title" data-aos="fade-down" data-aos-delay="200" data-aos-duration="1000">', '</h1>');
 
                 if (1 == $event_star_customizer_all_values['event-star-show-breadcrumb']) {
                     event_star_breadcrumbs();
@@ -118,7 +118,7 @@ ksort($agenda_data);
                             $day_active_in = sanitize_title($date);
                         }
                     ?>
-                        <li class="<?php echo $class_active; ?>" role="presentation">
+                        <li class="<?php echo $class_active; ?>" role="presentation" data-aos="fade-down" data-aos-delay="400" data-aos-duration="1000">
                             <a href="<?php echo get_site_url() . '#' . sanitize_title($date); ?>" aria-controls="<?php echo sanitize_title($date); ?>" role="tab" data-toggle="tab" style="text-decoration: none !important; font-size: 2rem !important; font-weight: bold !important; font-family: var(--font-heading-primary) !important;">
                                 <?php _e( 'Day ' . $counter );?>
                             </a>
@@ -150,19 +150,19 @@ ksort($agenda_data);
                             }
                             ?>
 
-                            <h3><?php echo $date; ?></h3>
+                            <h3 data-aos="fade-down" data-aos-delay="200" data-aos-duration="1000"><?php echo $date; ?></h3>
 
-                            <hr/>
+                            <hr data-aos="fade-right" data-aos-delay="200" data-aos-duration="1000" />
                             <div class="agenda-list">
                                 <?php
                                 foreach ($sessions as $time => $session_details) {
                                 ?>
-                                    <h3><?php echo $time; ?></h3>
-                                    <hr/>
+                                    <h3 data-aos="fade-right" data-aos-delay="200" data-aos-duration="1000"><?php echo $time; ?></h3>
+                                    <hr data-aos="fade-right" data-aos-delay="200" data-aos-duration="1000"/>
                                     <?php
                                     foreach ($session_details as $session) {
                                     ?>
-                                        <div class="agenda-item">
+                                        <div class="agenda-item" data-aos="fade-right" data-aos-delay="200" data-aos-duration="1000">
                                             <div class="row">
                                                 <div class="col-md-4">
                                                     <p style="margin-bottom: 0 !important;"><strong><?php echo $session['session_type']; ?></strong></p>
@@ -185,7 +185,7 @@ ksort($agenda_data);
                                                 </div>
                                             </div>
                                         </div>
-                                        <hr/>
+                                        <hr data-aos="fade-right" data-aos-delay="200" data-aos-duration="1000" />
                                 <?php
                                     }
                                 }
