@@ -144,7 +144,8 @@ ksort($agenda_data);
                         <div role="tabpanel" class="tab-pane <?php echo $class_active; ?>" id="<?php echo sanitize_title($date); ?>">
                             <?php
                             if ( ictcamp_localize_manager()->get_current_language() == 'km' ) {
-                                $date = ictcamp_localize_manager()->khmer_date( $date );
+                                // $date = ictcamp_localize_manager()->khmer_date( $date );
+                                $date = date('j F Y', strtotime($date));
                             } else {
                                 $date = date('j F Y', strtotime($date));
                             }
