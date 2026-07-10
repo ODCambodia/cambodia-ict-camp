@@ -39,6 +39,20 @@ do_action( 'event_star_action_after_footer' );
  * @hooked event_star_page_end - 10
  */
 do_action( 'event_star_action_after' );
+?>
+
+<?php function initialize_aos_script() { ?>
+        <script>
+            document.addEventListener('DOMContentLoaded', function() {
+                AOS.init({
+                    duration: 800,          // Values from 0 to 3000, with step 50ms
+                    easing: 'ease-in-out',  // Default easing for AOS animations
+                    once: true              // Whether animation should happen only once - while scrolling down
+                });
+            });
+        </script>
+<?php }
+add_action('wp_footer', 'initialize_aos_script');
 
 wp_footer();
 ?>
