@@ -18,7 +18,13 @@ global $event_star_customizer_all_values;
     <div class="container">
         <header class="entry-header init-animate">
             <?php
-            $single_header_title = $event_star_customizer_all_values['event-star-single-header-title'];
+            $post_type = get_post_type();
+
+            if ( 'post' === $post_type ) {
+                $single_header_title = $event_star_customizer_all_values['event-star-single-header-title'];
+            } else {
+                $single_header_title = get_post_type_object( $post_type )->labels->singular_name;
+            }
 
             if (!empty($single_header_title)) {
                 echo '<h1 class="entry-title">' . esc_html($single_header_title) . '</h1>';
@@ -37,7 +43,13 @@ global $event_star_customizer_all_values;
         <main id="main" class="site-main" role="main">
             <?php
             while (have_posts()) : the_post();
-                get_template_part('inc/template-parts/content', 'single-post'); ?>
+                if ( 'post' === $post_type ) {
+                    get_template_part('inc/template-parts/content', 'single-post');
+                } else {
+                    get_template_part('inc/template-parts/' . $post_type . '/content', 'single-post');
+                }
+                ?>
+
                 <div class="clearfix"></div>
             <?php
                 the_post_navigation();
