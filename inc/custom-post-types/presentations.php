@@ -23,7 +23,7 @@ function create_slide_presentation_custom_post_type()
         'label'               => __( 'Slide Presentations', 'ict_camp' ),
         'description'         => __( 'Slide Presentations', 'ict_camp' ),
         'labels'              => $labels,
-        'supports'            => ['title', 'editor', 'excerpt', 'thumbnail', 'revisions'],
+        'supports'            => ['title', 'editor', 'excerpt', 'thumbnail', 'revisions', 'page-attributes'],
         'taxonomies'          => ['category', 'camp_year'],
         'hierarchical'        => false,
         'public'              => true,

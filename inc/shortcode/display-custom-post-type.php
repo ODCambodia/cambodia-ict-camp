@@ -41,11 +41,28 @@ function display_custom_post_type($atts)
 
     $post_types = explode(',', $post_types);
 
+    // Set default order by Name and Descending
+    $orderby = 'name';
+    $order = 'DESC';
+
+    // Array of CPT for manually sorting by Order Index
+    $indexed_post_types = array(
+        "donors",
+        "parnters",
+        "organizers",
+        "presentations",
+    );
+
+    if ( in_array( $post_types[0], $indexed_post_types ) ) {
+        $orderby = 'menu_order';
+        $order = 'ASC';
+    }
+
     $args = array(
         'post_type'      => $post_types,
         'posts_per_page' => sanitize_text_field($shortcode_atts['max_post']),
-        'orderby'        => 'name',
-        'order'          => 'DESC',
+        'orderby'        => $orderby,
+        'order'          => $order,
         'post_status'    => 'publish'
     );
 
@@ -87,7 +104,7 @@ function display_custom_post_type($atts)
             $item_per_row = (int) sanitize_text_field($shortcode_atts['item_per_row']);
             $col_number = 12 / $item_per_row;
 
-            $post_list .= (!strcmp(sanitize_text_field($shortcode_atts['display']), 'list')) ? '<li>' : '<div class="col-xs-12 col-sm-' . $col_number . '">';
+            $post_list .= (!strcmp(sanitize_text_field($shortcode_atts['display']), 'list')) ? '<li>' : '<div class="img-item col-xs-12 col-sm-' . $col_number . '">';
             $custom_link = get_post_meta(get_the_ID(), '_custom_link_value_key', true);
 
             if (!strcmp(sanitize_text_field($shortcode_atts['show_thumbnail']), 'true')) :

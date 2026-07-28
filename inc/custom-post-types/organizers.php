@@ -23,7 +23,7 @@ function create_organizers_custom_post_type()
         'label'               => __( 'Organizers', 'ict_camp' ),
         'description'         => __( 'Organizers', 'ict_camp' ),
         'labels'              => $labels,
-        'supports'            => ['title', 'editor', 'excerpt', 'thumbnail', 'revisions'],
+        'supports'            => ['title', 'editor', 'excerpt', 'thumbnail', 'revisions', 'page-attributes'],
         'taxonomies'          => ['category', 'camp_year'],
         'hierarchical'        => false,
         'public'              => true,
