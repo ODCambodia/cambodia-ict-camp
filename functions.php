@@ -167,3 +167,6 @@ function trim_excerpt_khmer($text)
 
 remove_filter('get_the_excerpt', 'wp_trim_excerpt');
 add_filter('get_the_excerpt', 'trim_excerpt_khmer');
+
+// Enable shortcodes in Custom HTML widgets
+add_filter( 'widget_text', 'do_shortcode' );
