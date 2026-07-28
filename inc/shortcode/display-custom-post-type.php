@@ -48,7 +48,7 @@ function display_custom_post_type($atts)
     // Array of CPT for manually sorting by Order Index
     $indexed_post_types = array(
         "donors",
-        "parnters",
+        "partners",
         "organizers",
         "presentations",
     );
