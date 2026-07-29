@@ -1,17 +1,17 @@
+<?php
+$attributes = [
+    'title' => get_the_title(),
+    'class' => 'aligncenter img-circle margin-bottom-10-px',
+];
+
+$profile = get_the_post_thumbnail( $post->ID, [200, 200], $attributes );
+$responsive_profile = preg_replace( '/(width|height)="\d*"\s/', '', $profile );
+$speaker_linked_in_link = get_post_meta( $post->ID, '_speakers_social_media_links_value_key', true );
+$speaker_expertise = get_post_meta( $post->ID, '_speakers_expertise_value_key', true );
+$speaker_organization = get_post_meta( $post->ID, '_speakers_organization_value_key', true );
+?>
+
 <div class="col-xs-12 col-sm-4 col-md-2">
-    <?php
-    $attributes = [
-        'title' => get_the_title(),
-        'class' => 'aligncenter img-circle margin-bottom-10-px',
-    ];
-
-    $profile = get_the_post_thumbnail( $post->ID, [200, 200], $attributes );
-    $responsive_profile = preg_replace( '/(width|height)="\d*"\s/', '', $profile );
-    $speaker_linked_in_link = get_post_meta( $post->ID, '_speakers_social_media_links_value_key', true );
-    $speaker_expertise = get_post_meta( $post->ID, '_speakers_expertise_value_key', true );
-    $speaker_organization = get_post_meta( $post->ID, '_speakers_organization_value_key', true );
-    ?>
-
     <a href="#" data-toggle="modal" data-target="<?php echo '#' . $post->ID ?>">
         <?php echo $responsive_profile; ?>
     </a>
