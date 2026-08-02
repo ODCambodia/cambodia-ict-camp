@@ -123,6 +123,9 @@ require_once(__DIR__ . '/inc/localize-manager.php');
 // Shortcode
 require_once(__DIR__ . '/inc/shortcode/display-custom-post-type.php');
 
+// Custom Menu Ordering
+require_once(__DIR__ . '/inc/custom-menu-ordering.php');
+
 /**
  * Custom trim excerpt with Khmer text support, using regular expression. Khmer
  * text must contain zero-width spaces (ZWSP); otherwise, this code can not
