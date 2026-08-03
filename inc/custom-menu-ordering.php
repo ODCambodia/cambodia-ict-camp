@@ -10,7 +10,7 @@ function custom_wp_dashboard_menu_order($menu_order) {
         'edit.php',                         // Posts
         'upload.php',                       // Media
         'edit.php?post_type=page',          // Pages
-        
+
         'separator1',                       // Separator
         'edit.php?post_type=news',          // News
         'edit.php?post_type=announcements', // Announcements
@@ -23,7 +23,7 @@ function custom_wp_dashboard_menu_order($menu_order) {
         'edit.php?post_type=organizers',    // Organizers
         'edit.php?post_type=partners',      // Partners
         'edit.php?post_type=speakers',      // Speakers
-        
+
         'separator2',                       // Separator
         'edit-comments.php',                // Comments
         'themes.php',                       // Appearance
