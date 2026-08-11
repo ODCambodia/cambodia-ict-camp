@@ -1,0 +1,79 @@
+@media print {
+  /* 1. Force Bootstrap container & grid to use full width */
+  .container, .container-fluid {
+    padding: 0 !important;
+    margin: 0 !important;
+  }
+  
+  .row {
+    margin: 0 !important;
+  }
+
+  /* Clear rows dynamically to prevent layout overlapping */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+  /* PRESERVE BRAND: Hide navbar components EXCLUDING navbar-header */
+  .navbar {
+    display: block !important;
+    border: none !important;
+    background: transparent !important;
+  }
+
+  .navbar-header {
+    display: block !important;
+    float: left !important;
+  }
+
+  /* Hide menus, toggle buttons, and form inputs inside the navbar */
+  .navbar-nav, .navbar-toggle, .navbar-collapse, .navbar-form {
+    display: none !important;
+  }
+
+  /* Global typography reset */
+  body {
+    color: #000 !important;
+    background: #fff !important;
+    font-size: 12pt;
+    line-height: 1.5;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    color: #000 !important;
+    page-break-after: avoid;
+    break-after: avoid;
+  }
+
+  /* Disable Bootstrap 3 link URL insertion */
+	#sidebar, footer, .btn, .no-print, .top-header {
+    display: none !important;
+  }
+
+  a[href]:after {
+    content: "" !important;
+  }
+  
+  /* Clean up tables and images */
+  img, table, tr, pre, blockquote {
+    page-break-inside: avoid;
+    break-inside: avoid;
+  }
+
+  /* Reset AOS hidden states and force visibility */
+  [data-aos] {
+    opacity: 1 !important;
+    transform: none !important;
+    transition: none !important;
+  }
+
+  /* Reset Animate.css classes */
+  .animated, 
+  [class*="animate__"] {
+    animation: none !important;
+    opacity: 1 !important;
+    transform: none !important;
+  }
+}

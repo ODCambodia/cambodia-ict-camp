@@ -36,6 +36,7 @@ function cambodia_ict_camp_theme_scripts()
     }
 
     wp_enqueue_style('cambodia-ict-camp-style', get_stylesheet_uri(), array(), $theme->get('Version'));
+    wp_enqueue_style('print-style', get_stylesheet_directory_uri() . '/assets/css/print.css', array(), $theme->get('Version'));
 }
 add_action('wp_enqueue_scripts', 'cambodia_ict_camp_theme_scripts');
 
