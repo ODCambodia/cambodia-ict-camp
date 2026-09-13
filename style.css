@@ -401,11 +401,6 @@ DECORATIVE & UTILITY CLASSES
   text-decoration: underline !important;
 }
 
-
-
-
-
-
 #page {
   background: #fdfdfd;
 }
@@ -413,9 +408,6 @@ DECORATIVE & UTILITY CLASSES
 #primary {
   margin-bottom: 0;
 }
-
-
-
 
 .txtcolor-white {
   color: #fafafa !important;
@@ -561,6 +553,10 @@ DECORATIVE & UTILITY CLASSES
 
 .margin-top-1-em {
   margin-top: 15px;
+}
+
+.margin-bottom-1-em {
+  margin-bottom: 1em !important;
 }
 
 .no-margin {
@@ -903,6 +899,10 @@ DECORATIVE & UTILITY CLASSES
   max-width: 300px;
   image-rendering: -webkit-optimize-contrast;
   image-rendering: crisp-edges;
+}
+
+.agenda-item .label {
+  text-align: left;
 }
 
 /* END Bootstrap */

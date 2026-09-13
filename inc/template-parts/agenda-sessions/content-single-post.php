@@ -22,19 +22,19 @@ $no_blog_image = '';
             <?php
             endif; ?>
 
-            <p class="label label-info" style="font-size: 100% !important;">
+            <p class="label label-primary" style="font-size: 100% !important;">
                 <?php echo get_field('session_type'); ?>
             </p>
 
             <div class="entry-header-title">
-                <?php the_title( sprintf( '<h2 class="entry-title">' ), '</h2>' ); ?>
+                <?php the_title( sprintf( '<h2 class="entry-title" style="margin-top: 1rem;">' ), '</h2>' ); ?>
             </div>
             
             <hr/>
 
             <div class="row">
-                <div class="col-md-2">
-                    <p class="label label-default" style="font-size: 100% !important;">
+                <div class="col-md-2 margin-bottom-1-em">
+                    <p class="label label-success" style="font-size: 100% !important;">
                         <?php _e('Schedule', 'ict_camp'); ?>
                     </p>
                 </div>
@@ -50,8 +50,8 @@ $no_blog_image = '';
 
             <?php if ( !empty( get_the_content() ) ): ?>
                 <div class="row">
-                    <div class="col-md-2">
-                        <p class="label label-default" style="font-size: 100% !important;">
+                    <div class="col-md-2 margin-bottom-1-em">
+                        <p class="label label-success" style="font-size: 100% !important;">
                             <?php _e('Description', 'ict_camp'); ?>
                         </p>
                     </div>
@@ -66,8 +66,8 @@ $no_blog_image = '';
 
             <?php if( !empty( get_field('session_track') ) ) : ?>
                 <div class="row">
-                    <div class="col-md-2">
-                        <p class="label label-default" style="font-size: 100% !important;">
+                    <div class="col-md-2 margin-bottom-1-em">
+                        <p class="label label-success" style="font-size: 100% !important;">
                             <?php _e('Track', 'ict_camp'); ?>
                         </p>
                     </div>
@@ -80,8 +80,8 @@ $no_blog_image = '';
 
             <?php if( !empty( get_field('speakers') ) ) : ?>
                 <div class="row">
-                    <div class="col-md-2">
-                        <p class="label label-default" style="font-size: 100% !important;">
+                    <div class="col-md-2 margin-bottom-1-em">
+                        <p class="label label-success" style="font-size: 100% !important;">
                             <?php _e('Speakers', 'ict_camp'); ?>
                         </p>
                     </div>
