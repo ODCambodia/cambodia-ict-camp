@@ -119,7 +119,7 @@ ksort($agenda_data);
                         }
                     ?>
                         <li class="<?php echo $class_active; ?>" role="presentation" data-aos="fade-down" data-aos-delay="400" data-aos-offset="50">
-                            <a href="<?php echo get_site_url() . '#' . sanitize_title($date); ?>" aria-controls="<?php echo sanitize_title($date); ?>" role="tab" data-toggle="tab" style="text-decoration: none !important; font-size: 2rem !important; font-weight: bold !important; font-family: var(--font-heading-primary) !important;">
+                            <a href="<?php echo '#' . sanitize_title($date); ?>" data-toggle="tab" style="text-decoration: none !important; font-size: 2rem !important; font-weight: bold !important; font-family: var(--font-heading-primary) !important;">
                                 <?php _e( 'Day ' . $counter );?>
                             </a>
                         </li>
@@ -165,24 +165,24 @@ ksort($agenda_data);
                                     ?>
                                         <div class="agenda-item" data-aos="fade-right" data-aos-delay="200" data-aos-offset="50">
                                             <div class="row">
-                                                <div class="col-md-4">
-                                                    <p style="margin-bottom: 0 !important;"><strong><?php echo $session['session_type']; ?></strong></p>
-                                                    <p style="margin-bottom: 0 !important;"><?php echo $session['location']; ?></p>
-                                                </div>
-                                                <div class="col-md-8">
-                                                    <p class="label label-info" style="margin-bottom: 0 !important; font-size: 100% !important"><?php echo $session['track']; ?></p>
+                                                <div class="col-md-8 col-md-push-4">
+                                                    <p class="label label-success desktop-only" style="font-size: 100% !important"><?php echo __($session['track'], 'ict_camp'); ?></p>
                                                     
                                                     <?php if ( !empty( $session['description'] ) ) : ?>
-                                                        <h5><a href="<?php echo $session['permalink']; ?>" style="text-decoration: none; margin: 0 !important; font-family: var(--fs-heading-primary) !important;">
+                                                        <h5 style="margin-top: 0"><a href="<?php echo $session['permalink']; ?>" style="text-decoration: none; font-family: var(--fs-heading-primary) !important;">
                                                             <?php echo $session['title']; ?>
                                                         </a></h5>
                                                     <?php else: ?>
-                                                        <h5 style="margin: 0 !important;">
+                                                        <h5 style="margin-top: 0">
                                                             <?php echo $session['title']; ?>
                                                         </h5>
                                                     <?php endif; ?>
 
                                                     <div><?php echo apply_filters( 'the_content', $session['speakers'] ); ?></div>
+                                                </div>
+                                                <div class="col-md-4 col-md-pull-8">
+                                                    <p><strong><?php echo $session['session_type']; ?></strong></p>
+                                                    <p><?php echo $session['location']; ?></p>
                                                 </div>
                                             </div>
                                         </div>
@@ -203,6 +203,68 @@ ksort($agenda_data);
         </main><!-- #main -->
     </div><!-- #primary -->
 </div><!-- #content -->
+
+<script>
+    // Assign specific hash for the URL of each tab content
+    window.onload = function () {
+
+        function switchTab(hash) {
+            if (!hash) return;
+
+            // Strip the '#' symbol from the start to extract the raw ID string (e.g., "20260919")
+            var rawId = hash.substring(1);
+
+            // Safely fetch by ID using getElementById to bypass the numeric CSS selector limitation
+            var targetPane = document.getElementById(rawId);
+
+            // Use an attribute selector to safely locate the nav link link
+            var targetLink = document.querySelector('.nav-tabs a[href="' + hash + '"]');
+
+            if (targetPane && targetLink) {
+                // 1. Deactivate all active tab panes
+                var panes = targetPane.parentElement.querySelectorAll('.tab-pane');
+                panes.forEach(function (pane) {
+                    pane.classList.remove('active', 'in');
+                });
+
+                // 2. Deactivate all active navigation list items
+                var listItems = targetLink.closest('.nav-tabs').querySelectorAll('li');
+                listItems.forEach(function (li) {
+                    li.classList.remove('active');
+                });
+
+                // 3. Activate the chosen tab pane and its nav link container
+                targetPane.classList.add('active', 'in');
+                targetLink.parentElement.classList.add('active');
+            } else {
+                console.error("Tab switch failed: Elements matching " + hash + " not found.");
+            }
+        }
+
+        // Execute immediately on page load
+        if (window.location.hash) {
+            setTimeout(function() {
+                switchTab(window.location.hash);
+            }, 10);
+        }
+
+        // Track when users click links manually
+        var tabLinks = document.querySelectorAll('.nav-tabs a');
+        tabLinks.forEach(function (link) {
+            link.addEventListener('click', function (e) {
+                var hash = this.getAttribute('href');
+                if (hash && hash.startsWith('#')) {
+                    if (history.pushState) {
+                        history.pushState(null, null, hash);
+                    } else {
+                        window.location.hash = hash;
+                    }
+                    switchTab(hash);
+                }
+            });
+        });
+    };
+</script>
 
 <?php
 get_footer();
