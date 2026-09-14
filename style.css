@@ -591,8 +591,6 @@ DECORATIVE & UTILITY CLASSES
   padding: 10px;
 }
 
-
-
 .slick-list .slick-track .single-list article.post {
   padding-bottom: 0;
 }
@@ -608,6 +606,10 @@ DECORATIVE & UTILITY CLASSES
 
 .text-center {
   text-align: center;
+}
+
+.text-left {
+  text-align: left;
 }
 /* END General */
 

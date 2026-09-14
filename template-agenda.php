@@ -166,9 +166,11 @@ ksort($agenda_data);
                                         <div class="agenda-item" data-aos="fade-right" data-aos-delay="200" data-aos-offset="50">
                                             <div class="row">
                                                 <div class="col-md-8 col-md-push-4">
-                                                    <p class="label label-success desktop-only" style="font-size: 100% !important">
-                                                        <?php echo __($session['track'], 'ict_camp'); ?>
-                                                    </p>
+                                                    <?php if ( !empty( $session['track'] ) ) : ?>
+                                                        <p class="label label-success desktop-only text-left" style="font-size: 100% !important">
+                                                            <?php echo __($session['track'], 'ict_camp'); ?>
+                                                        </p>
+                                                    <?php endif; ?>
                                                     
                                                     <?php if ( !empty( $session['description'] ) ) : ?>
                                                         <h5 style="margin-top: 0">
@@ -185,8 +187,13 @@ ksort($agenda_data);
                                                     <div><?php echo apply_filters( 'the_content', __( $session['speakers'], 'ict_camp' ) ); ?></div>
                                                 </div>
                                                 <div class="col-md-4 col-md-pull-8">
-                                                    <p><strong><?php echo _e( $session['session_type'], 'ict_camp' ); ?></strong></p>
-                                                    <p><?php echo _e( $session['location'], 'ict_camp' ); ?></p>
+                                                    <?php if ( !empty( $session['session_type'] ) ) : ?>
+                                                        <p><strong><?php echo _e( $session['session_type'], 'ict_camp' ); ?></strong></p>
+                                                    <?php endif; ?>
+
+                                                    <?php if ( !empty( $session['location'] ) ) : ?>
+                                                        <p><?php echo _e( $session['location'], 'ict_camp' ); ?></p>
+                                                    <?php endif; ?>
                                                 </div>
                                             </div>
                                         </div>
