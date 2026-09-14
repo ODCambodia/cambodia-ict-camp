@@ -23,7 +23,7 @@ $no_blog_image = '';
             endif; ?>
 
             <p class="label label-primary" style="font-size: 100% !important;">
-                <?php echo get_field('session_type'); ?>
+                <?php echo _e( get_field('session_type'), 'ict_camp' ); ?>
             </p>
 
             <div class="entry-header-title">
@@ -42,7 +42,7 @@ $no_blog_image = '';
                     <?php $date = get_field('session_date'); ?>
                     <p><?php echo date('j F Y', strtotime($date)); ?></p>
                     <p><?php echo get_field('start_time') . ' - ' . get_field('end_time'); ?></p>
-                    <p><?php echo get_field('location'); ?></p>
+                    <p><?php echo _e( get_field('location'), 'ict_camp' ); ?></p>
                 </div>
             </div>
 
@@ -72,7 +72,7 @@ $no_blog_image = '';
                         </p>
                     </div>
                     <div class="col-md-10">
-                        <div><?php echo get_field('session_track'); ?></div>
+                        <div><?php echo _e( get_field('session_track'), 'ict_camp'); ?></div>
                     </div>
                 </div>
                 <hr/>
@@ -87,7 +87,7 @@ $no_blog_image = '';
                     </div>
                     <div class="col-md-10">
                         <div class="wysiwyg-field">
-                            <?php echo get_field('speakers'); ?>
+                            <?php echo _e( get_field('speakers'), 'ict_camp' ); ?>
                         </div>
                     </div>
                 </div>

@@ -166,23 +166,27 @@ ksort($agenda_data);
                                         <div class="agenda-item" data-aos="fade-right" data-aos-delay="200" data-aos-offset="50">
                                             <div class="row">
                                                 <div class="col-md-8 col-md-push-4">
-                                                    <p class="label label-success desktop-only" style="font-size: 100% !important"><?php echo __($session['track'], 'ict_camp'); ?></p>
+                                                    <p class="label label-success desktop-only" style="font-size: 100% !important">
+                                                        <?php echo __($session['track'], 'ict_camp'); ?>
+                                                    </p>
                                                     
                                                     <?php if ( !empty( $session['description'] ) ) : ?>
-                                                        <h5 style="margin-top: 0"><a href="<?php echo $session['permalink']; ?>" style="text-decoration: none; font-family: var(--fs-heading-primary) !important;">
-                                                            <?php echo $session['title']; ?>
-                                                        </a></h5>
+                                                        <h5 style="margin-top: 0">
+                                                            <a href="<?php echo $session['permalink']; ?>" style="text-decoration: none; font-family: var(--fs-heading-primary) !important;">
+                                                                <?php echo _e( $session['title'], 'ict_camp' ); ?>
+                                                            </a>
+                                                        </h5>
                                                     <?php else: ?>
                                                         <h5 style="margin-top: 0">
-                                                            <?php echo $session['title']; ?>
+                                                            <?php echo _e( $session['title'], 'ict_camp' ); ?>
                                                         </h5>
                                                     <?php endif; ?>
 
-                                                    <div><?php echo apply_filters( 'the_content', $session['speakers'] ); ?></div>
+                                                    <div><?php echo apply_filters( 'the_content', __( $session['speakers'], 'ict_camp' ) ); ?></div>
                                                 </div>
                                                 <div class="col-md-4 col-md-pull-8">
-                                                    <p><strong><?php echo $session['session_type']; ?></strong></p>
-                                                    <p><?php echo $session['location']; ?></p>
+                                                    <p><strong><?php echo _e( $session['session_type'], 'ict_camp' ); ?></strong></p>
+                                                    <p><?php echo _e( $session['location'], 'ict_camp' ); ?></p>
                                                 </div>
                                             </div>
                                         </div>
