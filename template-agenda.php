@@ -41,8 +41,10 @@ $args = [
     'post_type'     => 'agenda-session',
     'posts_per_page' => -1,
     'meta_key'     => 'start_time',
-    'orderby'      => 'meta_value',
-    'order'        => 'ASC',
+    'orderby'      => [
+        'meta_value'    => 'ASC',
+        'menu_order'    => 'ASC',
+    ],
     // 'meta_query' => [
     //     'relation' => 'AND',
     //     'date_clause' => [
