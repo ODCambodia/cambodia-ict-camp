@@ -944,7 +944,7 @@ canvas {
 /* Page: Agenda Session */
 h5.agenda-session-title {
   margin-top: 0;
-  font-weight: 400;
+  font-weight: 400 !important;
 }
 
 .agenda-item .label {
