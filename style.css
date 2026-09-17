@@ -956,6 +956,12 @@ h5.agenda-session-title {
   margin: 0 !important;
 } */
 
+/* Plugin: Flickr Album Gallery */
+.blueimp-gallery-display h3.title {
+  display: none;
+}
+/* END Flickr Album Gallery */
+
 /* Extra Small Devices */
 @media only screen and (max-width: 576px) {
   .blog-feature-image {
