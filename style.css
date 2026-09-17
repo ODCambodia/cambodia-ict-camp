@@ -957,7 +957,8 @@ h5.agenda-session-title {
 } */
 
 /* Plugin: Flickr Album Gallery */
-.blueimp-gallery-display h3.title {
+.flicgal-gallery-wrapper .blueimp-gallery-display > .title,
+.flicgal-gallery-wrapper .blueimp-gallery-controls > .title {
   display: none;
 }
 /* END Flickr Album Gallery */
