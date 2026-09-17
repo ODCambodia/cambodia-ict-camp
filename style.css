@@ -903,10 +903,6 @@ DECORATIVE & UTILITY CLASSES
   image-rendering: crisp-edges;
 }
 
-.agenda-item .label {
-  text-align: left;
-}
-
 /* END Bootstrap */
 
 /* Particles JS */
@@ -946,9 +942,19 @@ canvas {
 }
 
 /* Page: Agenda Session */
-div.wysiwyg-field * {
-  margin: 0 !important;
+h5.agenda-session-title {
+  margin-top: 0;
+  font-weight: 400;
 }
+
+.agenda-item .label {
+  text-align: left;
+  font-size: 100%;
+}
+
+/* div.wysiwyg-field * {
+  margin: 0 !important;
+} */
 
 /* Extra Small Devices */
 @media only screen and (max-width: 576px) {
