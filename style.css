@@ -276,6 +276,7 @@ p {
 a {
   font-family: var(--font-body-primary) !important;
   font-size: inherit !important;
+  font-weight: inherit !important;
   line-height: inherit !important;
   color: #96c942 !important;
   text-decoration: underline !important;
